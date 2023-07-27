@@ -28,6 +28,11 @@ and is currently hosted with Netlify!
 <br/><br/>
 Click https://webproject2020.netlify.app/ and check it out :)
 
+<br/>
+<img src="https://github.com/marythedev/webproject-2020/assets/79389256/d44d5920-4111-4c59-8a79-222c0fd8822e" alt="Website Screenshot 1" width="650" />
+<img src="https://github.com/marythedev/webproject-2020/assets/79389256/140a90dc-ea2c-4891-a1fd-0e49fa9da449" alt="Website Screenshot 2" width="650" />
+<br/>
+
 
 ## Wanna contribute?
 
