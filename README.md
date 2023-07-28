@@ -26,7 +26,8 @@ This static website is built only with <br/>
 ![HTML] AND ![CSS] <br/>
 and is currently hosted with Netlify!
 <br/><br/>
-Click https://webproject2020.netlify.app/ and check it out :)
+
+Click <a href="https://webproject2020.netlify.app/" target="_blank">https://webproject2020.netlify.app/</a> and check it out :)
 
 <br/>
 <img src="https://github.com/marythedev/webproject-2020/assets/79389256/d44d5920-4111-4c59-8a79-222c0fd8822e" alt="Website Screenshot 1" width="650" />
