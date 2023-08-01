@@ -26,10 +26,15 @@
                     <input type="submit" class="menu" value="Menu" />
                 </form>
             </div>
-            <p class="item"><a href="knowledge.html" class="item">Knowledge</a></p>
-            <p class="item"><a href="skills.html" class="item">Skills</a></p>
-            <p class="item"><a href="career-paths.html" class="item">Career Paths</a></p>
-            <p class="item"><a href="references.html" class="item">References</a></p>
+            <p class="item"><a href="en/knowledge.html" class="item">Knowledge</a></p>
+            <p class="item"><a href="en/skills.html" class="item">Skills</a></p>
+            <p class="item"><a href="en/career-paths.html" class="item">Career Paths</a></p>
+            <p class="item"><a href="en/references.html" class="item">References</a></p>
+            <select name="language-dropdown" id="language-dropdown">
+                <option value="index.html">English</option>
+                <option value="indexRU.html">Русский</option>
+                <option value="indexUA.html">Українська</option>
+            </select>
         </div>
 
         <!--Content-->
@@ -87,6 +92,14 @@
         <small>&copy; Copyright 2020, <a href="https://github.com/marythedev" target="_blank">Maria
                 Dmytrenko</a></small>
     </footer>
+
+
+
+    <script>
+        document.getElementById('language-dropdown').onchange = function () {
+            window.location.href = this.value;
+        }
+    </script>
 </body>
 
 </html>
