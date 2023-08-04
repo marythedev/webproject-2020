@@ -149,6 +149,13 @@ body {
     text-shadow: 1px 1px black;
 }
 
+#welcome-message {
+    text-align: center;
+    color: #3e7da8;
+    font-family: 'Changa', sans-serif;
+    line-height: 1.2em;
+}
+
 .header1 {
     text-align: center;
     color: red;
@@ -252,6 +259,26 @@ body {
 
 .notlink:hover {
     cursor: default;
+}
+
+#language-dropdown {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    height: 27px;
+    width: 75px;
+    border: none;
+    border-radius: 25px;
+    border: 1px solid white;
+    appearance: none;
+    margin-bottom: 15px;
+}
+
+#language-dropdown:hover {
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    transition: 1s;
 }
 
 /*FOOTER*/
