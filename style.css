@@ -149,6 +149,13 @@ body {
     text-shadow: 1px 1px black;
 }
 
+#welcome-message {
+    text-align: center;
+    color: #3e7da8;
+    font-family: 'Changa', sans-serif;
+    line-height: 1.2em;
+}
+
 .header1 {
     text-align: center;
     color: red;
