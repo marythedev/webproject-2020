@@ -1,42 +1,13 @@
 .menu {
-    font-family: 'Carter One', 'Concert One', 'Patua One', cursive;
-    font-size: 110%;
-    color: white;
-    background: rgba(171, 183, 183, 0);
-    border: 1px solid white;
+    font-family: 'Sofia Sans', sans-serif;
+
 }
 
 .item {
-    color: white;
-    font-size: 97%;
-    text-decoration: none;
-    font-family: 'Carter One', 'Concert One', 'Patua One', cursive;
-    transition: all .2s ease-in-out;
+    font-family: 'Sofia Sans', sans-serif;
+
 }
 
 .text {
-    font-family: 'Carter One', 'Concert One', 'Patua One', cursive;
-    font-size: 2.5em;
-    font-weight: 300;
-    letter-spacing: 4px;
-    color: white;
-    position: relative;
-    animation: text 2s 1;
-}
-
-.header1 {
-    text-align: center;
-    color: red;
-    font-family: 'Orbitron', 'Changa', sans-serif;
-}
-
-.header2 {
-    text-align: center;
-    color: #6a8788;
-    font-family: 'Orbitron', 'Changa', sans-serif;
-}
-
-.header2_else {
-    text-align: center;
-    font-family: 'Orbitron', 'Changa', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
