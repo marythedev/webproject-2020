@@ -18,370 +18,333 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <!--Navbar-->
+    <nav>
+        <a href="../index.html"><button class="main-button">Home</button></a>
+        <p class="nav-link"><a href="knowledge.html">Knowledge</a></p>
+        <p class="nav-link"><a href="skills.html">Skills</a></p>
+        <p class="nav-link"><a href="career-paths.html">Career Paths</a></p>
+        <p class="nav-link"><a href="references.html">References</a></p>
+        <select name="language-dropdown" id="language-dropdown">
+            <option value="knowledge.html" selected>English</option>
+            <option value="../ru/knowledge.html">Русский</option>
+            <option value="../ua/knowledge.html">Українська</option>
+        </select>
+    </nav>
+    <hr>
+    <div id="animation-header">History of the computer</div>
 
-        <!--Menu-->
-        <div class="container">
+    <!--Content-->
+    <div class="content">
+        <p class="bold">As we talk about computers, usually we tend to refer to the PC or the laptop, although
+            the explanation of what computer actually is is far beyond that. A computer is an electronic device that
+            manipulates information or data. It can store, retrieve and process data. Whether it is a tiny cellphone
+            or a large desktop computer, they both can be referred to as a computer.
+        </p>
+        <div class="flex-container">
+            <p>The history of the computer takes its roots way back from the 19th
+                century, when Charles Babbage <em>(1791-1871)</em> started the new technological era, designing the
+                first machine that could automatically perform hard calculations. Later the range of new inventions
+                was made. It is important to note that there are 5 major generations that brought us new computer
+                improvements and led us to the point of the technological era where we are today.
+            </p>
+            <img class="very-small-img" src="../data/CharlesBabbage.jpg" alt="Charles Babbage">
+        </div>
+        <h3>First generation: Vacuum Tubes (1946-1959)</h3>
+        <div class="flex-container">
+            <p>In 1946, J.P.Eckert and J.W.Mauchly invented the first
+                successful electronic computer called ENIAC (“Electronic Numeric Integrator And Calculator”)
+                with the following human invention of UNIVAC (1951), IBM-701 (1952) and other computers. These
+                computers were unreasonably large compared to today’s date ones, could weigh up to 30 tonnes,
+                and consumed a lot of energy. Due to their bulkiness, these
+                computers were very costly and ordinary people could not afford them.
+            </p>
+            <img class="scaleup medium-img" src="../data/ENIAC.jpg" alt="ENIAC">
+        </div>
+        <h3>Second generation: Transistors (1959-1965)</h3>
+        <div class="flex-container">
+            <p>Second generation computers were based on transistors instead of
+                vacuum tubes, therefore were they smaller and consumed less energy. Although they needed
+                constant maintenance, as they were relatively large to the current standards.
+            </p>
+            <img class="scaleup medium-img" src="../data/IBM7090.jpg" alt="IBM-7090">
+        </div>
+        <h3>Third generation: Integrated Circuits (IC) (1965-1971)</h3>
+        <div class="flex-container">
+            <p>The third generation of computers was based on integrated
+                circuits. An integrated circuit was invented by Robert Noyce and Jack Kilby in 1959 and required
+                a highly sophisticated technology, as it was a single component containing a number of
+                transistors.
+            </p>
+            <img class="scaleup medium-img" src="../data/ICL2900.jpg" alt="ICL-2900">
+        </div>
+        <h3>Fourth generation: Microprocessor (1971-1980)</h3>
+        <div class="flex-container">
+            <p>Microprocessors used in the fourth generation computers are a
+                small integrated central processing unit (CPU) of a computer that was made on a single
+                microelectronic chip. It contains millions of tiny transistors, resistors, and other components
+                that are combined in one chip. In addition to that, such computers were equipped with GUI
+                (Graphics User Interface) technology that offered more comfort and easiness to its users, and
+                which is used up to this day.
+            </p>
+            </p>
+            <img class="scaleup medium-img" src="../data/IBM4341.jpg" alt="IBM-4341">
+        </div>
+        <h3>Fifth generation: Artificial Intelligence (AI) (1980-present)</h3>
+        <div class="flex-container">
+            <p>The main mission of artificial intelligence is to make a device
+                that could respond to natural language input and is capable of learning and self-organization.
+                The world of information technology (IT) is still trying to solve this problem. During the time
+                of fifth generation computers, desktop computers, laptops, smartphones and many other new
+                user-friendly computers were invented. Currently, the tech companies offer us various types of
+                computers, starting from the large desktop computers to the tiny smartwatches that can make a
+                video call with your friends on the other side of the Earth.
+            </p>
+            <img class="scaleup large-img" src="../data/5th_generation_computer.jpg" alt="5th Generation Computer">
+        </div>
+
+        <h1 class="header1 shadow">Hardware <span>vs</span> Software</h1>
+        <p class="bold">Nowadays, without a doubt, the computer is the number one helper of the human without whom
+            life would be much harder. However, what is the computer itself? How does it have those abilities to
+            store, retrieve, and process our data? To better explain it, let’s start off with the 2 basic terms:
+            software and hardware. These are the two main components that computer depends on. To keep it simple,
+            hardware refers to the physical elements of a computer, while the software is the programs or apps that
+            give the instructions to the hardware parts about how to perform a specific task.
+        </p>
+
+        <h2 class="header2 shadow_small">Hardware</h2>
+        <h3>CPU (Central Processing Unit or processor)</h3>
+        <div class="flex-container">
+            <img class="scaleup large-img" src="../data/cpu.jpg" alt="CPU">
+            <p>The CPU is responsible for processing all information from
+                programs run by your computer. The speed at which the processor processes information, is
+                measured in gigahertz (GHz). The higher the GHz rating the processor has, the faster it will
+                perform.
+            </p>
+        </div>
+        <h3>Motherboard</h3>
+        <div class="flex-container">
+            <img class="scaleup large-img" src="../data/motherboard.jpg" alt="Motherboard">
+            <p>The motherboard is at the center of what makes a computer work,
+                and is home to one of the most important pieces of hardware - the processor. Motherboard
+                generally acts as a brain, it allocates power where it’s needed, communicating with and
+                coordinating across all other components – making it one of the most important pieces of
+                hardware in a computer.
+            </p>
+        </div>
+        <h3>Hard Drive</h3>
+        <div class="flex-container">
+            <img class="scaleup large-img" src="../data/harddrive.jpg" alt="HDD vs SSD">
+            <p>The hard drive is a storage device responsible for all of the
+                computer's data. For example, when you save an important document or a programming code file,
+                you are saving them to your computer's hard drive. There are two different types of hard drives:
+                hard disk drive (HDD) and solid-state drives (SSD). Hard disk drives work by writing data onto
+                spinning magnetic disks called platters, while a solid-state drive stores data by using memory
+                chips.
+            </p>
+        </div>
+        <h3>RAM (Random Access Memory)</h3>
+        <div class="flex-container">
+            <img class="scaleup large-img" src="../data/ram.jpg" alt="RAM">
+            <p>RAM is the temporary memory that is installed in the memory
+                slots of the motherboard. It is temporary as it temporarily stores “on-the-fly” information
+                created by programs that makes data immediately accessible (computer doesn't need to spend time
+                looking for information on the hard drive). However, once the computer is shut down, everything
+                that is stored in RAM gets deleted (unlike the permanent storage on hard drive). The tasks that
+                require random memory could be editing video or photographs, multi-tasking with multiple apps
+                open, etc.
+            </p>
+        </div>
+        <h3>Power Supply Unit (PSU)</h3>
+        <div class="flex-container">
+            <img class="scaleup large-img" src="../data/psu.jpg" alt="PSU">
+            <p>A power supply is a point where power enters your system from an
+                external power source and is then allocated by the motherboard to individual component hardware.
+                Not all power supplies are made equally, and without the right wattage PSU your computer will
+                fail to work. Computers that are used for highly intensive tasks such as graphic design or
+                gaming will require more powerful components and thus will need more powerful PSU to cater to
+                this additional need.
+            </p>
+        </div>
+
+        <h3 class="header1 black">Peripheral Devices</h3>
+        <p>A peripheral device is a piece of computer hardware that is added to a computer in order to expand its
+            abilities (like scanner, printer, mouse etc.). Yet it doesn’t necessarily have to be present in order
+            for a computer to perform its task (to store, retrieve, and process data). Examples of peripheral
+            devices include:
+        </p>
+        <h3>Mouse</h3>
+        <div class="flex-container">
+            <img class="scaleup small-img" src="../data/mouse.jpg" alt="Mouse">
+            <p>A mouse is an input device that uses "point and click"
+                technology to interact with a computer. Modern mice typically has two buttons, the left button
+                and the right button, with a scroll wheel in between the two.
+            </p>
+        </div>
+        <h3>Keyboard</h3>
+        <div class="flex-container">
+            <img class="scaleup small-img" src="../data/keyboard.jpg" alt="Keyboard">
+            <p>Keyboard is the most common input device. It works through
+                pressing push buttons (keys) and sending the signals to the computer.
+            </p>
+        </div>
+        <h3>Monitor</h3>
+        <div class="flex-container">
+            <img class="scaleup small-img" src="../data/monitor.jpg" alt="Monitor">
+            <p>Monitor enables users to interact with a computer more easily,
+                and is the most common output device. The monitor visually displays signals sent by the
+                computer. They look somewhat similar to TVs, but typically have a higher display resolution,
+                enabling greater visual detail.
+            </p>
+        </div>
+        <h3>Speakers</h3>
+        <div class="flex-container">
+            <img class="scaleup small-img" src="../data/speakers.jpg" alt="Speakers">
+            <p>A computer speaker is another common type of output device. They
+                typically come in pairs to provide stereo sound.
+            </p>
+        </div>
+        <h3>Microphone</h3>
+        <div class="flex-container">
             <div>
-                <form action="../index.html">
-                    <input type="submit" class="menu" value="Home" />
-                </form>
+                <img class="scaleup small-img" src="../data/microphone.jpg" alt="Microphone">
+                <img class="scaleup small-img" src="../data/microphone_builtin.png" alt="Build-in Microphone">
             </div>
-            <p class="item"><a href="knowledge.html" class="item">Knowledge</a></p>
-            <p class="item"><a href="skills.html" class="item">Skills</a></p>
-            <p class="item"><a href="career-paths.html" class="item">Career Paths</a></p>
-            <p class="item"><a href="references.html" class="item">References</a></p>
-            <select name="language-dropdown" id="language-dropdown">
-                <option value="knowledge.html" selected>English</option>
-                <option value="../ru/knowledge.html">Русский</option>
-                <option value="../ua/knowledge.html">Українська</option>
-            </select>
+            <p>Microphone is an audio input device. It feeds a sound signal to
+                the computer, where it can be recorded, or streamed across the internet. Nowadays, microphones
+                can be very tiny and are often built into the laptops, webcams and mobile phones.
+            </p>
+        </div>
+        <h3>Webcamera</h3>
+        <div class="flex-container">
+            <div>
+                <img class="scaleup small-img" src="../data/webcam.jpg" alt="Webcamera">
+                <img class="scaleup small-img" src="../data/webcam_builtin.jpg" alt="Built-in Webcamera">
+            </div>
+            <p>Webcamera is a video input device. They can be external and
+                connect to the computer or built into the computer itself. Webcameras are most often used to
+                enable people to see each other when communicating via the internet.
+            </p>
         </div>
 
-        <hr>
-
-        <div id="animation-header">
-            <div id="text">History of the computer</div>
+        <h2 class="header2 shadow_small">Software</h2>
+        <p>Software is one of the key factors when it comes to computers doing work. As it was previously mentioned,
+            computer software is a set of instructions that tell the computer how to work using its hardware. It is
+            crucial to understand that hardware without software is just some objects that don’t know how to work
+            together, and software builds a team out of these objects. There are a lot of types of software that are
+            focusing on different things. Starting from the operation system, and finishing up with the time
+            management application. Although, generally all software is divided into 2 categories: system and
+            application software.
+        </p>
+        <div class="center">
+            <img src="../data/System-Software-Vs-Application-Software.jpg" class="huge-img" alt="Software">
         </div>
 
-        <!--Content-->
-        <div class="content">
-            <br>
-            <p class="bold">As we talk about computers, usually we tend to refer to the PC or the laptop, although
-                the explanation of what computer actually is is far beyond that. A computer is an electronic device that
-                manipulates information or data. It can store, retrieve and process data. Whether it is a tiny cellphone
-                or a large desktop computer, they both can be referred to as a computer.
+        <h3 class="header1 black">System
+            software</h3>
+        <p>A system software aids the user and the hardware to function and interact with each other. Basically,
+            the system software is the middle layer between the user and the hardware. When you turn on the
+            computer, it is the system software that gets initialized and gets loaded in the memory of the
+            system. Usually, it runs in the background and doesn't directly interact with the end-users.
+            Examples of system software include:
+        </p>
+
+        <h3>Firmware</h3>
+        <div class="flex-container">
+            <p>Firmware is the permanent software that is embedded into a
+                read-only memory. It is a set of instructions permanently stored on a hardware device. These
+                instructions provide computer information regarding how hardware parts should interact. The
+                most prominent example of firmware is BIOS.
             </p>
-            <div class="flex-container">
-                <p class="flex-item">The history of the computer takes its roots way back from the 19th
-                    century, when Charles Babbage <em>(1791-1871)</em> started the new technological era, designing the
-                    first machine that could automatically perform hard calculations. Later the range of new inventions
-                    was made. It is important to note that there are 5 major generations that brought us new computer
-                    improvements and led us to the point of the technological era where we are today.
+            <img class="scaleup large-img" src="../data/BIOS.jpg" alt="Firmware (BIOS)">
+        </div>
+        <h3>Operating System (OS)</h3>
+        <div class="flex-container">
+            <p>An operating system is a software that manages computer
+                hardware resources and provides essential services for running applications. Every device,
+                whether a desktop, laptop or mobile phone requires an operating system to provide the basic
+                functionality to it. There are various types of operating systems. Some examples of
+                operating systems are Android, iOS, Linux, Mac OS, Unix, MS Windows.
+            </p>
+            <img class="scaleup large-img" src="../data/OS.jpg" alt="OS Types">
+        </div>
+        <h3>Device Drivers</h3>
+        <div class="flex-container">
+            <p>Driver is a special type of software designed to
+                facilitate communication between the operating system and specific hardware component, such
+                as a graphics card, printer, monitor, etc. The driver ensures the proper functioning of
+                the component, enabling the operating system to utilize its capabilities and ensuring the
+                stable operation of the device.
+            </p>
+            <img class="scaleup small-img" src="../data/drivers.png" alt="Driver's Function">
+        </div>
+        <h3>Programming Language Translators</h3>
+        <p>These mediator programs translate high-level language code to simpler machine-level code.
+            High-level language code is the code that the programmer writes using common programming
+            languages like Python, Java, Ruby and others. However, machines cannot directly understand it
+            because they speak only using different variations of machine-level code. Machine level
+            languages are the languages that are not understandable for the vast majority of people and
+            programmers. Therefore, programming language translators are needed.
+        </p>
+        <div class="center">
+            <div class="map_container">
+                <img class="scaleup huge-img" src="../data/high_language.png" alt="High-level Language Code">
+                <p>High-level Code
                 </p>
-                <img class="flex-item very-small-img" src="../data/CharlesBabbage.jpg" alt="Charles Babbage">
             </div>
-            <div class = "content-block">
-                <h3 class="margin_indent">First generation: Vacuum Tubes (1946-1959)</h3>
-                <div class="flex-container">
-                    <p class="flex-item">In 1946, J.P.Eckert and J.W.Mauchly invented the first
-                        successful electronic computer called ENIAC (“Electronic Numeric Integrator And Calculator”)
-                        with the following human invention of UNIVAC (1951), IBM-701 (1952) and other computers. These
-                        computers were unreasonably large compared to today’s date ones, could weigh up to 30 tonnes,
-                        and consumed a lot of energy. Due to their bulkiness, these
-                        computers were very costly and ordinary people could not afford them.
-                    </p>
-                    <img class="flex-item scaleup medium-img" src="../data/ENIAC.jpg" alt="ENIAC">
-                </div>
-                <h3 class="margin_indent">Second generation: Transistors (1959-1965)</h3>
-                <div class="flex-container">
-                    <p class="flex-item">Second generation computers were based on transistors instead of
-                        vacuum tubes, therefore were they smaller and consumed less energy. Although they needed
-                        constant maintenance, as they were relatively large to the current standards.
-                    </p>
-                    <img class="flex-item scaleup medium-img" src="../data/IBM7090.jpg" alt="IBM-7090">
-                </div>
-                <h3 class="margin_indent">Third generation: Integrated Circuits (IC) (1965-1971)</h3>
-                <div class="flex-container">
-                    <p class="flex-item">The third generation of computers was based on integrated
-                        circuits. An integrated circuit was invented by Robert Noyce and Jack Kilby in 1959 and required
-                        a highly sophisticated technology, as it was a single component containing a number of
-                        transistors.
-                    </p>
-                    <img class="flex-item scaleup medium-img" src="../data/ICL2900.jpg" alt="ICL-2900">
-                </div>
-                <h3 class="margin_indent">Fourth generation: Microprocessor (1971-1980)</h3>
-                <div class="flex-container">
-                    <p class="flex-item">Microprocessors used in the fourth generation computers are a
-                        small integrated central processing unit (CPU) of a computer that was made on a single
-                        microelectronic chip. It contains millions of tiny transistors, resistors, and other components
-                        that are combined in one chip. In addition to that, such computers were equipped with GUI
-                        (Graphics User Interface) technology that offered more comfort and easiness to its users, and
-                        which is used up to this day.
-                    </p>
-                    </p>
-                    <img class="flex-item scaleup medium-img" src="../data/IBM4341.jpg" alt="IBM-4341">
-                </div>
-                <h3 class="margin_indent">Fifth generation: Artificial Intelligence (AI) (1980-present)</h3>
-                <div class="flex-container">
-                    <p class="flex-item">The main mission of artificial intelligence is to make a device
-                        that could respond to natural language input and is capable of learning and self-organization.
-                        The world of information technology (IT) is still trying to solve this problem. During the time
-                        of fifth generation computers, desktop computers, laptops, smartphones and many other new
-                        user-friendly computers were invented. Currently, the tech companies offer us various types of
-                        computers, starting from the large desktop computers to the tiny smartwatches that can make a
-                        video call with your friends on the other side of the Earth.
-                    </p>
-                    <img class="flex-item scaleup large-img" src="../data/5th_generation_computer.jpg"
-                        alt="5th Generation Computer">
-                </div>
-            </div>
-
-            <br><br><br><br><br><br><br>
-
-            <h1 class="header1 shadow">Hardware <span>vs</span> Software</h1>
-            <p class="bold">Nowadays, without a doubt, the computer is the number one helper of the human without whom
-                life would be much harder. However, what is the computer itself? How does it have those abilities to
-                store, retrieve, and process our data? To better explain it, let’s start off with the 2 basic terms:
-                software and hardware. These are the two main components that computer depends on. To keep it simple,
-                hardware refers to the physical elements of a computer, while the software is the programs or apps that
-                give the instructions to the hardware parts about how to perform a specific task.
-            </p>
-
-            <h2 class="header2 shadow_small">Hardware</h2>
-            <br>
-            <div class="content-block">
-                <h3>CPU (Central Processing Unit or processor)</h3>
-                <div class="flex-container">
-                    <img class="flex-item scaleup large-img" src="../data/cpu.jpg" alt="CPU">
-                    <p class="flex-item">The CPU is responsible for processing all information from
-                        programs run by your computer. The speed at which the processor processes information, is
-                        measured in gigahertz (GHz). The higher the GHz rating the processor has, the faster it will
-                        perform.
-                    </p>
-                </div>
-                <h3 class="margin_indent">Motherboard</h3>
-                <div class="flex-container">
-                    <img class="flex-item scaleup large-img" src="../data/motherboard.jpg" alt="Motherboard">
-                    <p class="flex-item">The motherboard is at the center of what makes a computer work,
-                        and is home to one of the most important pieces of hardware - the processor. Motherboard
-                        generally acts as a brain, it allocates power where it’s needed, communicating with and
-                        coordinating across all other components – making it one of the most important pieces of
-                        hardware in a computer.
-                    </p>
-                </div>
-                <h3 class="margin_indent">Hard Drive</h3>
-                <div class="flex-container">
-                    <img class="flex-item scaleup large-img" src="../data/harddrive.jpg" alt="HDD vs SSD">
-                    <p class="flex-item">The hard drive is a storage device responsible for all of the
-                        computer's data. For example, when you save an important document or a programming code file,
-                        you are saving them to your computer's hard drive. There are two different types of hard drives:
-                        hard disk drive (HDD) and solid-state drives (SSD). Hard disk drives work by writing data onto
-                        spinning magnetic disks called platters, while a solid-state drive stores data by using memory
-                        chips.
-                    </p>
-                </div>
-                <h3 class="margin_indent">RAM (Random Access Memory)</h3>
-                <div class="flex-container">
-                    <img class="flex-item scaleup large-img" src="../data/ram.jpg" alt="RAM">
-                    <p class="flex-item">RAM is the temporary memory that is installed in the memory
-                        slots of the motherboard. It is temporary as it temporarily stores “on-the-fly” information
-                        created by programs that makes data immediately accessible (computer doesn't need to spend time
-                        looking for information on the hard drive). However, once the computer is shut down, everything
-                        that is stored in RAM gets deleted (unlike the permanent storage on hard drive). The tasks that
-                        require random memory could be editing video or photographs, multi-tasking with multiple apps
-                        open, etc.
-                    </p>
-                </div>
-                <h3 class="margin_indent">Power Supply Unit (PSU)</h3>
-                <div class="flex-container">
-                    <img class="flex-item scaleup large-img" src="../data/psu.jpg" alt="PSU">
-                    <p class="flex-item">A power supply is a point where power enters your system from an
-                        external power source and is then allocated by the motherboard to individual component hardware.
-                        Not all power supplies are made equally, and without the right wattage PSU your computer will
-                        fail to work. Computers that are used for highly intensive tasks such as graphic design or
-                        gaming will require more powerful components and thus will need more powerful PSU to cater to
-                        this additional need.
-                    </p>
-                </div>
-            </div>
-            <br>
-
-            <h3 class="header1 black">Peripheral
-                Devices</h3>
-            <p>A peripheral device is a piece of computer hardware that is added to a computer in order to expand its
-                abilities (like scanner, printer, mouse etc.). Yet it doesn’t necessarily have to be present in order
-                for a computer to perform its task (to store, retrieve, and process data). Examples of peripheral
-                devices include:
-            </p>
-            <div class="content-block">
-                <h3 class="margin_indent">Mouse</h3>
-                <div class="flex-container">
-                    <img class="flex-item scaleup small-img" src="../data/mouse.jpg" alt="Mouse">
-                    <p class="flex-item">A mouse is an input device that uses "point and click"
-                        technology to interact with a computer. Modern mice typically has two buttons, the left button
-                        and the right button, with a scroll wheel in between the two.
-                    </p>
-                </div>
-                <h3 class="margin_indent">Keyboard</h3>
-                <div class="flex-container">
-                    <img class="flex-item scaleup small-img" src="../data/keyboard.jpg" alt="Keyboard">
-                    <p class="flex-item">Keyboard is the most common input device. It works through
-                        pressing push buttons (keys) and sending the signals to the computer.
-                    </p>
-                </div>
-                <h3 class="margin_indent">Monitor</h3>
-                <div class="flex-container">
-                    <img class="flex-item scaleup small-img" src="../data/monitor.jpg" alt="Monitor">
-                    <p class="flex-item">Monitor enables users to interact with a computer more easily,
-                        and is the most common output device. The monitor visually displays signals sent by the
-                        computer. They look somewhat similar to TVs, but typically have a higher display resolution,
-                        enabling greater visual detail.
-                    </p>
-                </div>
-                <h3 class="margin_indent">Speakers</h3>
-                <div class="flex-container">
-                    <img class="flex-item scaleup small-img" src="../data/speakers.jpg" alt="Speakers">
-                    <p class="flex-item">A computer speaker is another common type of output device. They
-                        typically come in pairs to provide stereo sound.
-                    </p>
-                </div>
-                <h3 class="margin_indent">Microphone</h3>
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <img class="scaleup small-img" src="../data/microphone.jpg" alt="Microphone">
-                        <img class="scaleup small-img" src="../data/microphone_builtin.png"
-                            alt="Build-in Microphone">
-                    </div>
-                    <p class="flex-item">Microphone is an audio input device. It feeds a sound signal to
-                        the computer, where it can be recorded, or streamed across the internet. Nowadays, microphones
-                        can be very tiny and are often built into the laptops, webcams and mobile phones.
-                    </p>
-                </div>
-                <h3 class="margin_indent">Webcamera</h3>
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <img class="scaleup small-img" src="../data/webcam.jpg" alt="Webcamera">
-                        <img class="scaleup small-img" src="../data/webcam_builtin.jpg"
-                            alt="Built-in Webcamera">
-                    </div>
-                    <p class="flex-item">Webcamera is a video input device. They can be external and
-                        connect to the computer or built into the computer itself. Webcameras are most often used to
-                        enable people to see each other when communicating via the internet.
-                    </p>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <h2 class="header2 shadow_small margin_indent">Software</h2>
-            <p>Software is one of the key factors when it comes to computers doing work. As it was previously mentioned,
-                computer software is a set of instructions that tell the computer how to work using its hardware. It is
-                crucial to understand that hardware without software is just some objects that don’t know how to work
-                together, and software builds a team out of these objects. There are a lot of types of software that are
-                focusing on different things. Starting from the operation system, and finishing up with the time
-                management application. Although, generally all software is divided into 2 categories: system and
-                application software.
-            </p>
-            <div class="center">
-                <img src="../data/System-Software-Vs-Application-Software.jpg" class="huge-img" alt="Software">
-            </div>
-            <br> <br>
-            <div class="content-block">
-                <h3 class="header1 black">System
-                    software</h3>
-                <p>A system software aids the user and the hardware to function and interact with each other. Basically,
-                    the system software is the middle layer between the user and the hardware. When you turn on the
-                    computer, it is the system software that gets initialized and gets loaded in the memory of the
-                    system. Usually, it runs in the background and doesn't directly interact with the end-users.
-                    Examples of system software include:
+            <div class="map_container huge-img">
+                <img class="scaleup" src="../data/low_language.jpg" alt="Low-level Language Code">
+                <p>Low-level Code
                 </p>
-
-                <div class="content-block">
-                    <h3 class="margin_indent">Firmware</h3>
-                    <div class="flex-container">
-                        <p class="flex-item">Firmware is the permanent software that is embedded into a
-                            read-only memory. It is a set of instructions permanently stored on a hardware device. These
-                            instructions provide computer information regarding how hardware parts should interact. The
-                            most prominent example of firmware is BIOS.
-                        </p>
-                        <img class="flex-item scaleup large-img" src="../data/BIOS.jpg" alt="Firmware (BIOS)">
-                    </div>
-                    <h3>Operating System (OS)</h3>
-                    <div class="flex-container">
-                        <p class="flex-item">An operating system is a software that manages computer
-                            hardware resources and provides essential services for running applications. Every device,
-                            whether a desktop, laptop or mobile phone requires an operating system to provide the basic
-                            functionality to it. There are various types of operating systems. Some examples of
-                            operating systems are Android, iOS, Linux, Mac OS, Unix, MS Windows.
-                        </p>
-                        <img class="flex-item scaleup large-img" src="../data/OS.jpg" alt="OS Types">
-                    </div>
-                    <h3>Device Drivers</h3>
-                    <div class="flex-container">
-                        <p class="flex-item">Driver is a special type of software designed to
-                            facilitate communication between the operating system and specific hardware component, such
-                            as a graphics card, printer, monitor, etc. The driver ensures the proper functioning of
-                            the component, enabling the operating system to utilize its capabilities and ensuring the
-                            stable operation of the device.
-                        </p>
-                        <img class="flex-item scaleup small-img" src="../data/drivers.png" alt="Driver's Function">
-                    </div>
-                    <h3>Programming Language Translators</h3>
-                    <p>These mediator programs translate high-level language code to simpler machine-level code.
-                        High-level language code is the code that the programmer writes using common programming
-                        languages like Python, Java, Ruby and others. However, machines cannot directly understand it
-                        because they speak only using different variations of machine-level code. Machine level
-                        languages are the languages that are not understandable for the vast majority of people and
-                        programmers. Therefore, programming language translators are needed.
-                    </p>
-                    <div class="center">
-                        <div class="map_container">
-                            <img class="center_item scaleup huge-img" src="../data/high_language.png"
-                                alt="High-level Language Code">
-                            <p>High-level Code
-                            </p>
-                        </div>
-                        <div class="map_container huge-img">
-                            <img class="center_item scaleup" src="../data/low_language.jpg"
-                                alt="Low-level Language Code">
-                            <p>Low-level Code
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-                <h3 class="header1 black" id="add-top-margin">
-                    Application software (Apps)</h3>
-                <p>Apps is software that helps users perform various tasks (such as taking notes, setting
-                    alarms, playing games, etc.). Applications are at a higher level than system software and designed
-                    for specific purposes. The absence of applications is insignificant and does not impact the
-                    functioning of the system. Examples of application software include:
-                </p>
-                <div class="content-block">
-                    <h3>Web Browsers</h3>
-                    <div class="flex-container">
-                        <p class="flex-item">These applications are used to browse the internet. They
-                            help the user in locating and retrieving data across the web. Some examples of web browsers
-                            are Google Chrome, Mozilla Firefox, Safari, etc.
-                        </p>
-                        <img class="flex-item scaleup medium-img" src="../data/web-browsers.jpg" alt="Web Browsers Types">
-                    </div>
-                    <h3>Word Processors</h3>
-                    <div class="flex-container">
-                        <p class="flex-item">These applications are designed for documentation, but they
-                            also help to store, to format and to print the documents. Some examples of word processors
-                            are Microsoft Word, Google Docs, etc.
-                        </p>
-                        <img class="flex-item scaleup medium-img" src="../data/Word-Processor-software.jpg"
-                            alt="Word Processors Examples">
-                    </div>
-                    <h3>Multimedia Software</h3>
-                    <p>It is the software that is able to play, create or record audio or video files. They are
-                        used for video editing, animation and graphics. Some examples are Media Monkey, VLC Media
-                        Player, Windows Media Player.
-                    </p>
-                    <div class="center">
-                        <img class="center_item scaleup very-small-img" src="../data/mediamonkey.png" alt="MediaMonkey">
-                        <img class="center_item scaleup very-small-img" src="../data/vlc.jpg" alt="VCL Media Player">
-                        <img class="center_item scaleup very-small-img" src="../data/windowsmedia.jpg"
-                            alt="Windows Media PLayer">
-                    </div>
-                    <h3>Graphics Software</h3>
-                    <p>Graphics Software helps the user to create and edit images, animations, graphics, etc. Some
-                        examples are Adobe Photoshop, Blender, PaintShop Pro.
-                    </p>
-                    <div class="center">
-                        <img class="center_item scaleup very-small-img" src="../data/photoshop.png" alt="Photoshop">
-                        <img class="center_item scaleup very-small-img" src="../data/blender.png" alt="Blender">
-                        <img class="center_item scaleup very-small-img" src="../data/paintshop.png" alt="PaintShop Pro">
-                    </div>
-                </div>
             </div>
         </div>
-        <!--Footer-->
-        <div class="push"></div>
+
+        <h3 class="header1 black">
+            Application software (Apps)</h3>
+        <p>Apps is software that helps users perform various tasks (such as taking notes, setting
+            alarms, playing games, etc.). Applications are at a higher level than system software and designed
+            for specific purposes. The absence of applications is insignificant and does not impact the
+            functioning of the system. Examples of application software include:
+        </p>
+
+        <h3>Web Browsers</h3>
+        <div class="flex-container">
+            <p>These applications are used to browse the internet. They
+                help the user in locating and retrieving data across the web. Some examples of web browsers
+                are Google Chrome, Mozilla Firefox, Safari, etc.
+            </p>
+            <img class="scaleup medium-img" src="../data/web-browsers.jpg" alt="Web Browsers Types">
+        </div>
+        <h3>Word Processors</h3>
+        <div class="flex-container">
+            <p>These applications are designed for documentation, but they
+                also help to store, to format and to print the documents. Some examples of word processors
+                are Microsoft Word, Google Docs, etc.
+            </p>
+            <img class="scaleup medium-img" src="../data/Word-Processor-software.jpg" alt="Word Processors Examples">
+        </div>
+        <h3>Multimedia Software</h3>
+        <p>It is the software that is able to play, create or record audio or video files. They are
+            used for video editing, animation and graphics. Some examples are Media Monkey, VLC Media
+            Player, Windows Media Player.
+        </p>
+        <div class="center">
+            <img class="scaleup very-small-img" src="../data/mediamonkey.png" alt="MediaMonkey">
+            <img class="scaleup very-small-img" src="../data/vlc.jpg" alt="VCL Media Player">
+            <img class="scaleup very-small-img" src="../data/windowsmedia.jpg" alt="Windows Media PLayer">
+        </div>
+        <h3>Graphics Software</h3>
+        <p>Graphics Software helps the user to create and edit images, animations, graphics, etc. Some
+            examples are Adobe Photoshop, Blender, PaintShop Pro.
+        </p>
+        <div class="center">
+            <img class="scaleup very-small-img" src="../data/photoshop.png" alt="Photoshop">
+            <img class="scaleup very-small-img" src="../data/blender.png" alt="Blender">
+            <img class="scaleup very-small-img" src="../data/paintshop.png" alt="PaintShop Pro">
+        </div>
+
     </div>
+
     <hr id="footer">
     <footer>
         <small>&copy; Copyright 2020-2023, <a href="https://github.com/marythedev" target="_blank">
