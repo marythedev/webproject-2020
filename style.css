@@ -1,16 +1,15 @@
-html {
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
     width: 100%;
-    background: rgb(255, 255, 255);
-    background: white;
+    background: #fff;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,8 +20,7 @@ body {
 /* MENU */
 .container {
     font-size: 1.7em;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -32,17 +30,14 @@ body {
 }
 
 .menu {
-    padding-top: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 15px;
+    padding: 15px 25px;
     border: none;
     border-radius: 6px;
+    border: 1px solid white;
     font-family: 'Carter One', 'Concert One', 'Patua One', cursive;
     font-size: 110%;
     color: white;
     background: rgba(171, 183, 183, 0);
-    border: 1px solid white;
 }
 
 .menu:hover {
@@ -66,22 +61,23 @@ body {
     transform: scale(1.2);
 }
 
-.container1 {
+#animation-header {
     text-align: center;
     background-color: black;
     padding: 20px;
 }
 
-.text {
+#text {
     margin: 3px;
     padding: 3px;
-    font-family: 'Carter One', 'Concert One', 'Patua One', cursive;
+    font-family: 'Orbitron', 'Changa', sans-serif;
     font-size: 2.5em;
     font-weight: 300;
     letter-spacing: 4px;
     color: white;
     position: relative;
     animation: text 2s 1;
+    font-weight: 900;
 }
 
 @keyframes text {
@@ -103,8 +99,14 @@ body {
     font-weight: 600;
 }
 
-.none {
-    list-style-type: none;
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+hr#footer {
+    margin-top: 3px;
+    border: 0.5px solid grey;
 }
 
 .margin_indent {
@@ -121,7 +123,11 @@ body {
     hyphens: auto;
 }
 
-.content_references {
+.content-block {
+    margin: 0 50px;
+}
+
+#references {
     margin-top: 75px;
     margin-bottom: 75px;
     margin-left: 200px;
@@ -133,11 +139,11 @@ body {
     hyphens: auto;
 }
 
-.content_references a {
+#references a {
     text-decoration: none;
 }
 
-.content_references .website-title {
+#references .reference-title {
     font-style: italic;
 }
 
@@ -158,8 +164,20 @@ body {
 
 .header1 {
     text-align: center;
-    color: red;
+    color: #6a8788;
     font-family: 'Orbitron', 'Changa', sans-serif;
+}
+
+.black {
+    color: black;
+}
+
+.header1.black {
+    color: black;
+}
+
+.header1 > span {
+    color: #c4af80;
 }
 
 .header2 {
@@ -168,9 +186,12 @@ body {
     font-family: 'Orbitron', 'Changa', sans-serif;
 }
 
-.header2_else {
-    text-align: center;
-    font-family: 'Orbitron', 'Changa', sans-serif;
+.header2.skills {
+    color: #3b4262;
+}
+
+.header2.path {
+    color: #1bb0e2;
 }
 
 .flex-container {
@@ -193,6 +214,23 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.map_container iframe {
+    max-width: 500px;
+    max-height: 350px;
+    border: 1px solid black;
+}
+
+.map_container p {
+    font-size: 0.74em;
+    margin:0;
+}
+
+.map_container a {
+    text-decoration: underline; 
+    color: black; 
+    font-weight:550;
 }
 
 .center {
@@ -223,6 +261,182 @@ body {
     max-width: 55%;
 }
 
+/*Images*/
+.picture {
+    max-height: 200px; 
+    max-width: 150px;
+}
+
+.wide-img img {
+    max-height: 175px; 
+    max-width: 450px;
+}
+
+.small-wide img {
+    max-height: 175px; 
+    max-width: 350px;
+}
+
+.huge-img img {
+    max-height: 250px; 
+    max-width: 650px;
+}
+
+.large-img img {
+    max-height: 250px;
+    max-width: 400px;
+}
+
+.tall-img {
+    max-height: 300px; 
+    max-width: 200px;
+}
+
+.add-small-margin {
+    margin: 45px;
+}
+
+.add-left-margin {
+    margin-left: 50px;
+}
+
+.small-history img {
+    max-height: 250px; 
+    max-width: 275px;
+}
+
+.history img {
+    max-height: 250px; 
+    max-width: 300px;
+}
+
+.history-bit-bigger img {
+    max-height: 250px; 
+    max-width: 325px;
+}
+
+.large-history img {
+    max-height: 265px; 
+    max-width: 350px;
+}
+
+.periph-img img {
+    max-height: 150px; 
+    max-width: 200px;
+}
+
+.mid-periph img {
+    max-height: 180px; 
+    max-width: 175px;
+}
+
+.mic-img > div:first-child{
+    max-height: 175px; 
+    max-width: 150px;
+}
+
+.mic-img > div:last-child{
+    max-height: 175px; 
+    max-width: 215px;
+    margin-left: 20px;
+}
+
+.webcam-img img {
+    max-height: 175px; 
+    max-width: 215px;
+}
+
+.webcam-img > div:last-child {
+    margin-left: 20px;
+}
+
+.small-size-img img {
+    max-height: 200px; 
+    max-width: 275px;
+}
+
+.little-size-img img {
+    max-height: 225px; 
+    max-width: 300px;
+}
+
+.even-more-tiny img {
+    max-height: 150px; 
+    max-width: 100px;
+}
+
+.super-tiny img {
+    max-height: 175px; 
+    max-width: 100px;
+}
+
+.tiny-img img {
+    max-height: 175px; 
+    max-width: 200px;
+}
+
+.small-mid-img img {
+    max-height: 200px; 
+    max-width: 300px;
+}
+
+.mid-size-img img {
+    max-height: 200px; 
+    max-width: 350px;
+}
+
+.big-size-img img {
+    max-height: 250px; 
+    max-width: 350px;
+}
+
+.super-large-img {
+    margin: 35px;
+}
+
+#add-top-margin {
+    margin-top: 40px;
+}
+
+.super-large-img img {
+    max-height: 300px; 
+    max-width: 400px;
+}
+
+.software-examples img {
+    max-height: 150px; 
+    max-width: 150px;
+}
+
+.path img {
+    max-height: 300px; 
+    max-width: 450px;
+}
+
+#tech-companies img {
+    object-fit: cover;
+    -webkit-aspect-ratio: 4 / 3;
+    -moz-aspect-ratio: 4 / 3;
+    -ms-aspect-ratio: 4 / 3;
+    -o-aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 3;
+    max-height: 200px;
+    max-width: 275px;
+}
+
+#educational-websites img {
+    object-fit: cover;
+    -webkit-aspect-ratio: 16 / 9;
+    -moz-aspect-ratio: 16 / 9;
+    -ms-aspect-ratio: 16 / 9;
+    -o-aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9;
+    max-height: 200px;
+    max-width: 350px;
+}
+
+
+/*Animations*/
 .scaleup {
     transition: all 0.3s;
 }
@@ -241,10 +455,6 @@ body {
 
 .link:hover {
     cursor: pointer;
-}
-
-.notlink:hover {
-    cursor: default;
 }
 
 #language-dropdown {
@@ -274,7 +484,7 @@ body {
     /* Equal to height of footer */
 }
 
-.footer,
+footer,
 .push {
     height: 75px;
     line-height: 10px;
@@ -284,7 +494,7 @@ body {
     align-items: center;
 }
 
-.footer a {
+footer a {
     text-decoration: none;
     color: inherit;
     font-weight: 700;
