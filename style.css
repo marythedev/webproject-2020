@@ -4,6 +4,8 @@
 
 html,
 body {
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 
@@ -262,156 +264,39 @@ hr#footer {
 }
 
 /*Images*/
-.picture {
-    max-height: 200px; 
-    max-width: 150px;
-}
-
-.wide-img img {
-    max-height: 175px; 
-    max-width: 450px;
-}
-
-.small-wide img {
-    max-height: 175px; 
-    max-width: 350px;
-}
-
-.huge-img img {
-    max-height: 250px; 
-    max-width: 650px;
-}
-
-.large-img img {
-    max-height: 250px;
-    max-width: 400px;
-}
-
-.tall-img {
-    max-height: 300px; 
-    max-width: 200px;
-}
-
 .add-small-margin {
     margin: 45px;
 }
-
 .add-left-margin {
     margin-left: 50px;
 }
-
-.small-history img {
-    max-height: 250px; 
-    max-width: 275px;
-}
-
-.history img {
-    max-height: 250px; 
-    max-width: 300px;
-}
-
-.history-bit-bigger img {
-    max-height: 250px; 
-    max-width: 325px;
-}
-
-.large-history img {
-    max-height: 265px; 
-    max-width: 350px;
-}
-
-.periph-img img {
-    max-height: 150px; 
-    max-width: 200px;
-}
-
-.mid-periph img {
-    max-height: 180px; 
-    max-width: 175px;
-}
-
-.mic-img > div:first-child{
-    max-height: 175px; 
-    max-width: 150px;
-}
-
-.mic-img > div:last-child{
-    max-height: 175px; 
-    max-width: 215px;
-    margin-left: 20px;
-}
-
-.webcam-img img {
-    max-height: 175px; 
-    max-width: 215px;
-}
-
-.webcam-img > div:last-child {
-    margin-left: 20px;
-}
-
-.small-size-img img {
-    max-height: 200px; 
-    max-width: 275px;
-}
-
-.little-size-img img {
-    max-height: 225px; 
-    max-width: 300px;
-}
-
-.even-more-tiny img {
-    max-height: 150px; 
-    max-width: 100px;
-}
-
-.super-tiny img {
-    max-height: 175px; 
-    max-width: 100px;
-}
-
-.tiny-img img {
-    max-height: 175px; 
-    max-width: 200px;
-}
-
-.small-mid-img img {
-    max-height: 200px; 
-    max-width: 300px;
-}
-
-.mid-size-img img {
-    max-height: 200px; 
-    max-width: 350px;
-}
-
-.big-size-img img {
-    max-height: 250px; 
-    max-width: 350px;
-}
-
-.super-large-img {
-    margin: 35px;
-}
-
 #add-top-margin {
     margin-top: 40px;
 }
 
-.super-large-img img {
-    max-height: 300px; 
-    max-width: 400px;
-}
 
-.software-examples img {
-    max-height: 150px; 
+.tiny-img {
+    max-width: 100px;
+}
+.very-small-img {
     max-width: 150px;
 }
-
-.path img {
-    max-height: 300px; 
+.small-img {
+    max-width: 200px;
+}
+.medium-img {
+    max-width: 300px;
+}
+.large-img {
+    max-width: 350px;
+}
+.huge-img {
     max-width: 450px;
 }
+
+
+
+
 
 #tech-companies img {
     object-fit: cover;
