@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    font-family: Arial, sans-serif;
     color: #000;
 }
 
@@ -24,10 +25,8 @@ body {
 /* Navbar */
 nav {
     background: #000;
-    color: #fff;
     font-size: 24px;
-    font-family: 'Carter One', 'Concert One', 'Patua One', cursive;
-
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -35,8 +34,12 @@ nav {
     align-items: center;
 }
 
+nav * {
+    font-family: 'Carter One', 'Concert One', 'Patua One', cursive;
+    color: #fff;
+}
+
 .nav-link {
-    color: inherit;
     transition: all .2s ease-in-out;
 }
 
@@ -45,16 +48,9 @@ nav {
     transform: scale(1.2);
 }
 
-.nav-link * {
-    color: inherit;
-    font-family: inherit;
-}
-
 .main-button {
     background: transparent;
-    color: #fff;
     font-size: 30px;
-    font-family: inherit;
 
     border: 1px solid #fff;
     border-radius: 6px;
@@ -70,7 +66,6 @@ nav {
 
 #language-dropdown {
     background: transparent;
-    color: #fff;
     font-size: 12px;
     text-align: center;
 
@@ -78,12 +73,15 @@ nav {
     border-radius: 25px;
 
     appearance: none;
-
+    
     height: 27px;
     width: 75px;
+    color: #fff;
+    font-family: Arial, sans-serif !important;
 }
-
-#language-dropdown:hover {
+#language-dropdown:hover,
+#language-dropdown option {
+    font-family: Arial, sans-serif !important;
     background: #fff;
     color: #000;
     transition: 1s;
