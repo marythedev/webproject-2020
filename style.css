@@ -208,7 +208,7 @@ nav#large-screen .nav-link:hover {
         top: 65px;
     }
 
-    .home-button {
+    #home-button {
         font-size: 24px;
     }
 }
@@ -226,7 +226,7 @@ nav#large-screen .nav-link:hover {
         display: flex;
     }
 
-    .home-button {
+    #home-button {
         font-size: 30px;
     }
 }
@@ -245,7 +245,7 @@ nav#large-screen .nav-link:hover {
         display: flex;
     }
 
-    .home-button {
+    #home-button {
         font-size: 34px;
     }
 }
