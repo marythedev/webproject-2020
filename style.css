@@ -171,6 +171,7 @@ nav#large-screen .nav-link:hover {
     transform: translate(0, -9px) rotate(-45deg);
 }
 
+
 .language-dropdown {
     background: transparent;
     font-size: 12px;
@@ -195,73 +196,12 @@ nav#large-screen .nav-link:hover {
     transition: 1s;
 }
 
-@media (max-width: 925px) {
-    nav#small-screen {
-        display: flex;
-    }
-
-    nav#large-screen {
-        display: none;
-    }
-
-    nav #nav-links {
-        top: 65px;
-    }
-
-    #home-button {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 925px) and (max-width: 1920px) {
-    nav {
-        font-size: 24px;
-    }
-
-    nav#small-screen {
-        display: none;
-    }
-
-    nav#large-screen {
-        display: flex;
-    }
-
-    #home-button {
-        font-size: 30px;
-    }
-}
-
-@media (min-width: 1921px) {
-    nav {
-        font-size: 32px;
-        display: none;
-    }
-
-    nav#small-screen {
-        display: none;
-    }
-
-    nav#large-screen {
-        display: flex;
-    }
-
-    #home-button {
-        font-size: 34px;
-    }
-}
-
-
-
-
-
-
 
 #animation-header {
     background: #000;
     color: #fff;
     font-family: 'Orbitron', 'Changa', sans-serif;
     font-weight: 900;
-    font-size: 38px;
     text-align: center;
     letter-spacing: 4px;
 
@@ -283,6 +223,71 @@ nav#large-screen .nav-link:hover {
         letter-spacing: 4px;
     }
 }
+
+
+@media (max-width: 925px) {
+    nav#small-screen {
+        display: flex;
+    }
+
+    nav#large-screen {
+        display: none;
+    }
+
+    nav #nav-links {
+        top: 65px;
+    }
+
+    #animation-header {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 925px) and (max-width: 1920px) {
+    nav {
+        font-size: 24px;
+    }
+
+    nav#small-screen {
+        display: none;
+    }
+
+    nav#large-screen {
+        display: flex;
+    }
+
+    #home-button {
+        font-size: 30px;
+    }
+
+    #animation-header {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 1921px) {
+    nav {
+        font-size: 32px;
+        display: none;
+    }
+
+    nav#small-screen {
+        display: none;
+    }
+
+    nav#large-screen {
+        display: flex;
+    }
+
+    #home-button {
+        font-size: 34px;
+    }
+
+    #animation-header {
+        font-size: 46px;
+    }
+}
+
 
 .content .reference-title {
     font-style: italic;
@@ -306,4 +311,10 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+/*default img size, so they don't disturb nav development for now*/
+img {
+    height: 10px;
+    width: 10px;
 }
