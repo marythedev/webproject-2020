@@ -117,7 +117,7 @@ nav#small-screen #nav-links:last-child {
 
 nav#small-screen .nav-link:hover {
     font-weight: 600;
-    transform: translate(73px, 0) scale(1.2);
+    transform: translate(10%, 0) scale(1.2);
 }
 
 nav#large-screen .nav-link:hover {
