@@ -7,7 +7,7 @@ document.querySelector('#large-screen .language-dropdown').onchange = function (
 }
 
 var navExpanded = false;
-document.getElementsByClassName('home-button')[0].addEventListener('click', () => {
+document.getElementById('menu-button').addEventListener('click', () => {
     if (navExpanded) {
         document.querySelector('#small-screen #nav-links').style.display = "none";
         document.getElementById('line1').classList.remove("nav-expanded");
