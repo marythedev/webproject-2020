@@ -15,18 +15,46 @@
     <meta name="viewport" content="width=device-width">
 </head>
 
-<body> <!--Navbar-->
-    <nav> <a href="index.html"><button class="main-button">Menu</button></a>
-        <p class="nav-link"><a href="en/knowledge.html">Knowledge</a></p>
-        <p class="nav-link"><a href="en/skills.html">Skills</a></p>
-        <p class="nav-link"><a href="en/career-paths.html">Career Paths</a></p>
-        <p class="nav-link"><a href="en/references.html">References</a></p> <select name="language-dropdown"
-            id="language-dropdown">
+<body>
+
+    <!--Navbar (for small screens < 769px)-->
+    <nav id="small-screen">
+        <div id="nav-content">
+            <div class="home-button">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <div id="nav-links">
+                <p class="nav-link"><a href="index.html">Home</a></p>
+                <p class="nav-link"><a href="en/knowledge.html">Knowledge</a></p>
+                <p class="nav-link"><a href="en/skills.html">Skills</a></p>
+                <p class="nav-link"><a href="en/career-paths.html">Career Paths</a></p>
+                <p class="nav-link"><a href="en/references.html">References</a></p>
+            </div>
+        </div>
+        <select name="language-dropdown" class="language-dropdown">
             <option value="index.html" selected>English</option>
             <option value="ru/index.html">Русский</option>
             <option value="ua/index.html">Українська</option>
         </select>
-    </nav> <!--Content-->
+    </nav>
+
+    <!--Navbar (for large screens > 769px)-->
+    <nav id="large-screen">
+        <a href="index.html"><button class="home-button">Home</button></a>
+        <p class="nav-link"><a href="en/knowledge.html">Knowledge</a></p>
+        <p class="nav-link"><a href="en/skills.html">Skills</a></p>
+        <p class="nav-link"><a href="en/career-paths.html">Career Paths</a></p>
+        <p class="nav-link"><a href="en/references.html">References</a></p>
+        <select name="language-dropdown" class="language-dropdown">
+            <option value="index.html" selected>English</option>
+            <option value="ru/index.html">Русский</option>
+            <option value="ua/index.html">Українська</option>
+        </select>
+    </nav>
+
+    <!--Content-->
     <div class="content">
         <h1>Welcome to the best placement for the cooperative education experience!</h1>
         <div>

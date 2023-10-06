@@ -12,18 +12,42 @@
   <meta name="viewport" content="width=device-width">
 </head>
 
-<body> <!--Navbar-->
-  <nav> <a href="index.html"><button class="main-button">Главная</button></a>
-    <p class="nav-link"><a href="knowledge.html">Знания</a></p>
-    <p class="nav-link"><a href="skills.html">Навыки</a></p>
-    <p class="nav-link"><a href="career-paths.html">Карьерные Пути</a></p>
-    <p class="nav-link"><a href="references.html">Источники</a></p> <select name="language-dropdown"
-      id="language-dropdown">
+<body>
+  <!--Navbar (for small screens < 769px)-->
+  <nav id="small-screen">
+    <div id="nav-content">
+      <button class="home-button">
+        <img src="../data/icons/menu-icon-white.png" alt="menu-icon" class="menu-icon">
+      </button>
+      <div id="nav-links">
+        <p class="nav-link"><a href="index.html">Главная</a></p>
+        <p class="nav-link"><a href="knowledge.html">Знания</a></p>
+        <p class="nav-link"><a href="skills.html">Навыки</a></p>
+        <p class="nav-link"><a href="career-paths.html">Карьерные Пути</a></p>
+        <p class="nav-link"><a href="references.html">Ссылки</a></p>
+      </div>
+    </div>
+    <select name="language-dropdown" class="language-dropdown">
       <option value="../en/references.html">English</option>
       <option value="references.html" selected>Русский</option>
       <option value="../ua/references.html">Українська</option>
     </select>
   </nav>
+
+  <!--Navbar (for large screens > 769px)-->
+  <nav id="large-screen">
+    <a href="index.html"><button class="home-button">Главная</button></a>
+    <p class="nav-link"><a href="knowledge.html">Знания</a></p>
+    <p class="nav-link"><a href="skills.html">Навыки</a></p>
+    <p class="nav-link"><a href="career-paths.html">Карьерные Пути</a></p>
+    <p class="nav-link"><a href="references.html">Ссылки</a></p>
+    <select name="language-dropdown" class="language-dropdown">
+      <option value="../en/references.html">English</option>
+      <option value="references.html" selected>Русский</option>
+      <option value="../ua/references.html">Українська</option>
+    </select>
+  </nav>
+
   <hr>
   <div id="animation-header">Источники</div> <!--Content-->
   <div class="content">

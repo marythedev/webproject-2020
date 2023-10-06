@@ -12,18 +12,42 @@
     <meta name="viewport" content="width=device-width">
 </head>
 
-<body> <!--Navbar-->
-    <nav> <a href="index.html"><button class="main-button">Головна</button></a>
-        <p class="nav-link"><a href="knowledge.html">Знання</a></p>
-        <p class="nav-link"><a href="skills.html">Навички</a></p>
-        <p class="nav-link"><a href="career-paths.html">Кар'єрні Шляхи</a></p>
-        <p class="nav-link"><a href="references.html">Джерела</a></p> <select name="language-dropdown"
-            id="language-dropdown">
+<body>
+    <!--Navbar (for small screens < 769px)-->
+    <nav id="small-screen">
+        <div id="nav-content">
+            <button class="home-button">
+                <img src="../data/icons/menu-icon-white.png" alt="menu-icon" class="menu-icon">
+            </button>
+            <div id="nav-links">
+                <p class="nav-link"><a href="index.html">Головна</a></p>
+                <p class="nav-link"><a href="knowledge.html">Знання</a></p>
+                <p class="nav-link"><a href="skills.html">Навички</a></p>
+                <p class="nav-link"><a href="career-paths.html">Кар'єрні Шляхи</a></p>
+                <p class="nav-link"><a href="references.html">Джерела</a></p>
+            </div>
+        </div>
+        <select name="language-dropdown" class="language-dropdown">
             <option value="../en/knowledge.html">English</option>
             <option value="../ru/knowledge.html">Русский</option>
             <option value="knowledge.html" selected>Українська</option>
         </select>
     </nav>
+
+    <!--Navbar (for large screens > 769px)-->
+    <nav id="large-screen">
+        <a href="index.html"><button class="home-button">Головна</button></a>
+        <p class="nav-link"><a href="knowledge.html">Знання</a></p>
+        <p class="nav-link"><a href="skills.html">Навички</a></p>
+        <p class="nav-link"><a href="career-paths.html">Кар'єрні Шляхи</a></p>
+        <p class="nav-link"><a href="references.html">Джерела</a></p>
+        <select name="language-dropdown" class="language-dropdown">
+            <option value="../en/knowledge.html">English</option>
+            <option value="../ru/knowledge.html">Русский</option>
+            <option value="knowledge.html" selected>Українська</option>
+        </select>
+    </nav>
+
     <hr>
     <div id="animation-header">Історія Комп'ютера</div> <!--Content-->
     <div class="content">

@@ -19,25 +19,180 @@ body {
 
 body {
     background: #fff;
-    font-size: 20px;
 }
+
+/*Mobile devices & Tablets*/
+@media (max-width: 925px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/*Laptops & Desktops*/
+@media (min-width: 925px) and (max-width: 1920px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/*TV and super large screen desktops*/
+@media (min-width: 1921px)  {
+    body {
+        font-size: 28px;
+    }
+}
+
+
+
+
 
 /* Navbar */
 nav {
     background: #000;
-    font-size: 24px;
-    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 95px; /*@media's nav #nav-links depends on this*/
 }
 
 nav * {
     font-family: 'Carter One', 'Concert One', 'Patua One', cursive;
     color: #fff;
 }
+
+nav#large-screen,
+nav#small-screen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav#small-screen {
+    font-size: 20px; /*font-size is the same for mobile & tablets*/
+}
+
+nav#small-screen #nav-links {
+    display: none;
+
+    position: absolute; 
+    top: 95px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: fit-content;
+
+    background-color: #000;
+}
+
+nav#small-screen #nav-links > * {
+    padding: 10px 20px;
+}
+
+@media (max-width: 925px) {
+    nav#small-screen {
+        display: flex;
+    }
+
+    nav#large-screen {
+        display: none;
+    }
+
+    nav #nav-links {
+        top: 65px;
+    }
+
+    .home-button {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 925px) and (max-width: 1920px) {
+    nav {
+        font-size: 24px;
+    }
+
+    nav#small-screen {
+        display: none;
+    }
+
+    nav#large-screen {
+        display: flex;
+    }
+
+    .home-button {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1921px)  {
+    nav {
+        font-size: 32px;
+        display: none;
+    }
+
+    nav#small-screen {
+        display: none;
+    }
+
+    nav#large-screen {
+        display: flex;
+    }
+
+    .home-button {
+        font-size: 34px;
+    }
+}
+
+nav .home-button {
+    background: transparent;
+
+    border: 1px solid #fff;
+    border-radius: 6px;
+
+    padding: 10px 20px;
+
+    transition: 0.5s;
+}
+
+nav #large-screen .home-button:active {
+    background: #fff;
+    color: #000;
+    transition: 1s;
+}
+
+nav #large-screen .home-button:hover {
+    background: #fff;
+    color: #000;
+    transition: 1s;
+}
+
+nav#small-screen .home-button{
+    padding: 20px 20px;
+}
+
+/* hamburger icon */
+#line1, #line2, #line3 {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+#line1.nav-expanded {
+    transform: translate(0, 9px) rotate(45deg);
+}
+
+#line2.nav-expanded {
+    opacity: 0;
+}
+
+#line3.nav-expanded {
+    transform: translate(0, -9px) rotate(-45deg);
+}
+
 
 .nav-link {
     transition: all .2s ease-in-out;
@@ -48,23 +203,7 @@ nav * {
     transform: scale(1.2);
 }
 
-.main-button {
-    background: transparent;
-    font-size: 30px;
-
-    border: 1px solid #fff;
-    border-radius: 6px;
-
-    padding: 15px 25px;
-}
-
-.main-button:hover {
-    background: #fff;
-    color: #000;
-    transition: 1s;
-}
-
-#language-dropdown {
+.language-dropdown {
     background: transparent;
     font-size: 12px;
     text-align: center;
@@ -73,19 +212,28 @@ nav * {
     border-radius: 25px;
 
     appearance: none;
-    
+
     height: 27px;
     width: 75px;
     color: #fff;
     font-family: Arial, sans-serif !important;
 }
-#language-dropdown:hover,
-#language-dropdown option {
+
+.language-dropdown:hover,
+.language-dropdown option {
     font-family: Arial, sans-serif !important;
     background: #fff;
     color: #000;
     transition: 1s;
 }
+
+
+
+
+
+
+
+
 
 #animation-header {
     background: #000;
@@ -115,69 +263,9 @@ nav * {
     }
 }
 
-/*Text styling*/
-/* .shadow {
-    text-shadow: 2px 2px #000;
-}
-
-.shadow_small {
-    text-shadow: 1px 1px #000;
-}
-
-#welcome-message {
-    text-align: center;
-    color: #3e7da8;
-    font-family: 'Changa', sans-serif;
-    line-height: 1.2em;
-}
-
-.large-header {
-    text-align: center;
-    color: #6a8788;
-    font-family: 'Orbitron', 'Changa', sans-serif;
-}
-
-.large-header>span {
-    color: #c4af80;
-}
-
-.mid-header {
-    text-align: center;
-    color: #6a8788;
-    font-family: 'Orbitron', 'Changa', sans-serif;
-}
-
-h1.skills {
-    color: #3b4262;
-}
-
-.mid-header.path {
-    color: #1bb0e2;
-} */
-
-
-/*CONTENT*/
-/* .content {
-
-} */
-
 .content .reference-title {
     font-style: italic;
 }
-
-/*Animations*/
-/* .scaleup,
-.scaledown {
-    transition: all 0.3s;
-}
-
-.scaleup:hover {
-    transform: scale(1.2);
-}
-
-.scaledown:hover {
-    transform: scale(0.8);
-} */
 
 .content a,
 footer a {
@@ -192,7 +280,7 @@ hr#footer {
 
 footer {
     height: 75px;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
