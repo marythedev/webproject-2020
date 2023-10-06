@@ -9,13 +9,6 @@
     text-shadow: 1px 1px #000;
 }
 
-#welcome-message {
-    text-align: center;
-    color: #3e7da8;
-    font-family: 'Changa', sans-serif;
-    line-height: 1.2em;
-}
-
 .large-header {
     text-align: center;
     color: #6a8788;
@@ -38,26 +31,4 @@ h1.skills {
 
 .mid-header.path {
     color: #1bb0e2;
-}
-
-
-/*CONTENT*/
-.content {
-
-}
-
-
-
-/*Animations*/
-.scaleup,
-.scaledown {
-    transition: all 0.3s;
-}
-
-.scaleup:hover {
-    transform: scale(1.2);
-}
-
-.scaledown:hover {
-    transform: scale(0.8);
 }

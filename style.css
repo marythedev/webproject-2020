@@ -23,24 +23,35 @@ body {
 
 /*Mobile devices & Tablets*/
 @media (max-width: 925px) {
+
+    html,
     body {
         font-size: 16px;
     }
 }
 
 /*Laptops & Desktops*/
-@media (min-width: 925px) and (max-width: 1920px) {
+@media (min-width: 926px) and (max-width: 1920px) {
+
+    html,
     body {
-        font-size: 18px;
+        font-size: 19px;
     }
 }
 
 /*TV and super large screen desktops*/
 @media (min-width: 1921px) {
+
+    html,
     body {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
+
+
+
+
+
 
 
 
@@ -103,7 +114,6 @@ nav#small-screen #nav-links {
         opacity: 0.7;
     }
 }
-
 
 
 nav#small-screen #nav-links>* {
@@ -253,7 +263,7 @@ nav#large-screen .nav-link:hover {
     }
 }
 
-@media (min-width: 925px) and (max-width: 1920px) {
+@media (min-width: 926px) and (max-width: 1920px) {
     nav {
         font-size: 24px;
     }
@@ -303,53 +313,20 @@ nav#large-screen .nav-link:hover {
 }
 
 
-.content .reference-title {
-    font-style: italic;
-}
 
-.content a,
-footer a {
-    font-weight: 700;
-    cursor: pointer;
-}
 
-/*Content + Footer*/
+
+
+
+
+
+
+/*Content + Footer Alignment*/
 main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-@media (max-width: 925px) {
-    main {
-        min-height: calc(100vh - 95px - 79px);
-        /* 95px is the height of nav
-        79px is the height of #animation-header for small screens */
-    }
-}
-
-@media (min-width: 925px) and (max-width: 1920px) {
-    main {
-        min-height: calc(100vh - 95px - 89px);
-        /* 95px is the height of nav
-        89px is the height of #animation-header for medium screens */
-    }
-}
-
-@media (min-width: 1921px) {
-    main {
-        min-height: calc(100vh - 95px - 100px);
-        /* 95px is the height of nav
-        100px is the height of #animation-header for large screens */
-    }
-}
-
-main#index {
-    min-height: calc(100vh - 95px);
-    /* 95px is the height of nav
-       index page doesn't have #animation-header */
-}
-
 
 footer {
     width: 100%;
@@ -364,13 +341,25 @@ footer {
 
 
 @media (max-width: 925px) {
+    main {
+        min-height: calc(100vh - 95px - 79px);
+        /* 95px is the height of nav
+        79px is the height of #animation-header for small screens */
+    }
+
     footer {
         font-size: 14px;
         height: 50px;
     }
 }
 
-@media (min-width: 925px) and (max-width: 1920px) {
+@media (min-width: 926px) and (max-width: 1920px) {
+    main {
+        min-height: calc(100vh - 95px - 89px);
+        /* 95px is the height of nav
+        89px is the height of #animation-header for medium screens */
+    }
+
     footer {
         font-size: 16px;
         height: 60px;
@@ -378,14 +367,113 @@ footer {
 }
 
 @media (min-width: 1921px) {
+    main {
+        min-height: calc(100vh - 95px - 100px);
+        /* 95px is the height of nav
+        100px is the height of #animation-header for large screens */
+    }
+
     footer {
         font-size: 20px;
         height: 75px;
     }
 }
 
-/*default img size, so they don't disturb nav development for now*/
+
+main#index {
+    min-height: calc(100vh - 95px);
+    /* 95px is the height of nav
+       index page doesn't have #animation-header */
+}
+
+
+
+
+
+
+
+
+
+
+/*Content Custom Setting (side paddings, font styles, etc)*/
+h1 {
+    font-size: 1.8rem;
+    color: #3e7da8;
+    font-family: 'Changa', sans-serif;
+    line-height: 1.2em;
+}
+
+.center {
+    text-align: center;
+}
+
+main a {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.reference-title {
+    font-style: italic;
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .content {
+        padding: 25px 25px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 769px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .content {
+        padding: 25px 7%;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 925px) {
+    .content {
+        padding: 25px 12%;
+    }
+}
+
+@media (min-width: 926px) {
+    .content {
+        padding: 25px 15%;
+    }
+}
+
+
+
+/*Image animations*/
+img {
+    border-radius: 10px;
+}
+
+.scaleup,
+.scaledown {
+    transition: all 0.5s;
+}
+
+.scaleup:hover {
+    transform: scale(1.2);
+}
+
+.scaledown:hover {
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+
+/*for now*/
 img {
     height: 10px;
-    max-width: 100%;
 }
