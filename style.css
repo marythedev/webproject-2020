@@ -377,6 +377,8 @@ footer {
     align-items: center;
 
     border-top: 0.5px solid grey;
+
+    text-align: center;
 }
 
 
@@ -445,6 +447,10 @@ h1 {
 
 .center {
     text-align: center;
+}
+
+.dont-wrap {
+    display: inline-block;
 }
 
 main a {
