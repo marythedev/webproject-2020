@@ -170,9 +170,9 @@ nav#large-screen .nav-link:hover {
 }
 
 /* 3-line menu icon */
-#line1,
-#line2,
-#line3 {
+.line1,
+.line2,
+.line3 {
     width: 35px;
     height: 3px;
 
@@ -184,15 +184,15 @@ nav#large-screen .nav-link:hover {
     transition: 0.5s;
 }
 
-#line1.nav-expanded {
+.line1.nav-expanded {
     transform: translate(0, 9px) rotate(45deg);
 }
 
-#line2.nav-expanded {
+.line2.nav-expanded {
     opacity: 0;
 }
 
-#line3.nav-expanded {
+.line3.nav-expanded {
     transform: translate(0, -9px) rotate(-45deg);
 }
 
