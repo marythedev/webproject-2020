@@ -480,6 +480,8 @@ img {
 
 
 /*for now*/
-img {
+img:not(#logo),
+iframe {
     height: 10px;
+    width: 10px;
 }
