@@ -250,7 +250,7 @@ nav#large-screen .nav-link:hover {
     85% {
         letter-spacing: 4px;
     }
-} 
+}
 
 @media (max-width: 379px) {
     nav#ultra-small-screen {
@@ -279,6 +279,7 @@ nav#large-screen .nav-link:hover {
 }
 
 @media (min-width: 380px) and (max-width: 925px) {
+
     nav#ultra-small-screen,
     nav#large-screen {
         display: none;
@@ -372,15 +373,30 @@ footer {
     width: 100%;
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 
     border-top: 0.5px solid grey;
-
-    text-align: center;
 }
 
+footer small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    line-height: 1.75;
+}
+
+footer span {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
 
 @media (max-width: 925px) {
     main {
@@ -449,10 +465,6 @@ h1 {
     text-align: center;
 }
 
-.dont-wrap {
-    display: inline-block;
-}
-
 main a {
     font-weight: 700;
     cursor: pointer;
@@ -460,8 +472,8 @@ main a {
 
 footer img {
     border-radius: 0;
-    height: 20px;
-    margin-left: 5px;
+    width: 20px;
+    margin-bottom: 3px;
 }
 
 .reference-title {
@@ -528,7 +540,7 @@ img {
 
 
 /*for now*/
-img:not(#logo),
+img:not(#logo, footer img),
 iframe {
     height: 10px;
     width: 10px;
