@@ -17,10 +17,34 @@
 </head>
 
 <body>
-    <!--Navbar (for small screens < 769px)-->
+    <!--Navbar (for ultra small screens < 380px)-->
+    <nav id="ultra-small-screen">
+        <div id="nav-content">
+            <div id="menu-button-ultra-small">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <div id="nav-links">
+                <p class="nav-link"><a href="index.html">Главная</a></p>
+                <p class="nav-link"><a href="knowledge.html">Знания</a></p>
+                <p class="nav-link"><a href="skills.html">Навыки</a></p>
+                <p class="nav-link"><a href="career-paths.html">Карьерные Пути</a></p>
+                <p class="nav-link"><a href="references.html">Ссылки</a></p>
+                <select name="language-dropdown" class="language-dropdown">
+                    <option value="../en/skills.html">English</option>
+                    <option value="skills.html" selected>Русский</option>
+                    <option value="../ua/skills.html">Українська</option>
+                </select>
+            </div>
+        </div>
+        <img src="../data/icons/logo.svg" id="logo" alt="Web Project Logo">
+    </nav>
+
+    <!--Navbar (for small screens 380px < 769px)-->
     <nav id="small-screen">
         <div id="nav-content">
-            <div id="menu-button">
+            <div id="menu-button-small">
                 <div id="line1"></div>
                 <div id="line2"></div>
                 <div id="line3"></div>
@@ -33,6 +57,7 @@
                 <p class="nav-link"><a href="references.html">Ссылки</a></p>
             </div>
         </div>
+        <img src="../data/icons/logo.svg" id="logo" alt="Web Project Logo">
         <select name="language-dropdown" class="language-dropdown">
             <option value="../en/skills.html">English</option>
             <option value="skills.html" selected>Русский</option>

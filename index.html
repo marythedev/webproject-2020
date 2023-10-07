@@ -20,11 +20,34 @@
 </head>
 
 <body>
+    <!--Navbar (for ultra small screens < 380px)-->
+    <nav id="ultra-small-screen">
+        <div id="nav-content">
+            <div id="menu-button-ultra-small">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+            <div id="nav-links">
+                <p class="nav-link"><a href="index.html">Home</a></p>
+                <p class="nav-link"><a href="en/knowledge.html">Knowledge</a></p>
+                <p class="nav-link"><a href="en/skills.html">Skills</a></p>
+                <p class="nav-link"><a href="en/career-paths.html">Career Paths</a></p>
+                <p class="nav-link"><a href="en/references.html">References</a></p>
+                <select name="language-dropdown" class="language-dropdown">
+                    <option value="index.html" selected>English</option>
+                    <option value="ru/index.html">Русский</option>
+                    <option value="ua/index.html">Українська</option>
+                </select>
+            </div>
+        </div>
+        <img src="data/icons/logo.svg" id="logo" alt="Web Project Logo">
+    </nav>
 
-    <!--Navbar (for small screens < 769px)-->
+    <!--Navbar (for small screens 380px < 769px)-->
     <nav id="small-screen">
         <div id="nav-content">
-            <div id="menu-button">
+            <div id="menu-button-small">
                 <div id="line1"></div>
                 <div id="line2"></div>
                 <div id="line3"></div>
@@ -37,7 +60,7 @@
                 <p class="nav-link"><a href="en/references.html">References</a></p>
             </div>
         </div>
-        <img src="data/icons/logo.svg" id="logo" alt="Web Project Logo" height="100%">
+        <img src="data/icons/logo.svg" id="logo" alt="Web Project Logo">
         <select name="language-dropdown" class="language-dropdown">
             <option value="index.html" selected>English</option>
             <option value="ru/index.html">Русский</option>
