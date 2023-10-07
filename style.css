@@ -22,7 +22,7 @@ body {
 }
 
 /*Mobile devices & Tablets*/
-@media (max-width: 925px) {
+@media (max-width: 600px) {
 
     html,
     body {
@@ -30,12 +30,21 @@ body {
     }
 }
 
-/*Laptops & Desktops*/
-@media (min-width: 926px) and (max-width: 1920px) {
+/*Tablets & Laptiops*/
+@media (min-width: 601px) and (max-width: 1550px) {
 
     html,
     body {
-        font-size: 19px;
+        font-size: 18px;
+    }
+}
+
+/*Laptops & Desktops*/
+@media (min-width: 1551px) and (max-width: 1920px) {
+
+    html,
+    body {
+        font-size: 20px;
     }
 }
 
@@ -367,6 +376,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    word-wrap: break-word;
+}
+
+main img {
+    /*for old browsers*/
+    max-width: 100vw;
 }
 
 footer {
@@ -384,7 +400,7 @@ footer small {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+
     line-height: 1.75;
 }
 
@@ -454,20 +470,40 @@ main#index {
 
 
 /*Content Custom Setting (side paddings, font styles, etc)*/
-h1 {
-    font-size: 1.8rem;
-    color: #3e7da8;
-    font-family: 'Changa', sans-serif;
-    line-height: 1.2em;
-}
 
+/*Alignments*/
 .center {
     text-align: center;
+}
+
+/*Text stylings*/
+h1 {
+    font-family: 'Changa', sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.2em;
+
+    color: #3e7da8;
+
+    padding-bottom: 20px;
 }
 
 main a {
     font-weight: 700;
     cursor: pointer;
+}
+
+.reference-title {
+    font-style: italic;
+}
+
+
+/*Images*/
+img {
+    border-radius: 10px;
+}
+
+img#logo {
+    height: 100%;
 }
 
 footer img {
@@ -476,50 +512,7 @@ footer img {
     margin-bottom: 3px;
 }
 
-.reference-title {
-    font-style: italic;
-}
-
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .content {
-        padding: 25px 25px;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 769px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .content {
-        padding: 25px 7%;
-    }
-}
-
-@media (min-width: 770px) and (max-width: 925px) {
-    .content {
-        padding: 25px 12%;
-    }
-}
-
-@media (min-width: 926px) {
-    .content {
-        padding: 25px 15%;
-    }
-}
-
-
-
 /*Image animations*/
-img {
-    border-radius: 10px;
-}
-
 .scaleup,
 .scaledown {
     transition: all 0.5s;
@@ -533,19 +526,59 @@ img {
     transform: scale(0.8);
 }
 
+/*Custom screen size stylings & side paddings*/
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
 
+    .content {
+        padding: 25px 25px;
+    }
 
-
-
-
-
-/*for now*/
-img:not(#logo, footer img),
-iframe {
-    height: 10px;
-    width: 10px;
+    main img {
+        /*for new browsers*/
+        max-width: calc(100vw - 50px);
+        /* 50px - side paddings of .content */
+    }
 }
 
-img#logo {
-    height: 100%;
+@media (min-width: 481px) and (max-width: 769px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        padding: 25px 7%;
+    }
+
+    main img {
+        /*for new browsers*/
+        max-width: calc(100vw - 14%);
+        /* 14% - side paddings of .content */
+    }
+}
+
+@media (min-width: 770px) and (max-width: 925px) {
+    .content {
+        padding: 25px 12%;
+    }
+
+    main img {
+        /*for new browsers*/
+        max-width: calc(100vw - 24%);
+        /* 24% - side paddings of .content */
+    }
+}
+
+@media (min-width: 926px) {
+    .content {
+        padding: 25px 15%;
+    }
+
+    main img {
+        /*for new browsers*/
+        max-width: calc(100vw - 30%);
+        /* 30% - side paddings of .content */
+    }
 }
