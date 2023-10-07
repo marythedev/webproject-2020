@@ -44,10 +44,12 @@ If you want to share your placement experience or have other idea to enhance thi
   4. Push to Your Branch (`git push origin my-experience`)
   5. Open a Pull Request
 
-Thank you and Good luck!
+Check [this Figma file](https://www.figma.com/file/N0AdeOj7CMO7FXU2u8AB6L/WebProject2020?type=design&node-id=0%3A1&mode=design&t=iYSuB60ijwzMKuyt-1) to see the current versions of icons & WebProject2020 Logo. Feel free to add your designs :)
 
 Need contribution idea?
 See the [open issues](https://github.com/marythedev/webproject-2020/issues) for some of the possible contributions.
+
+Thank you and Good luck!
 
 
 ## Contact
