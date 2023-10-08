@@ -476,6 +476,10 @@ main#index {
     text-align: center;
 }
 
+#references > *:not(:last-child) {
+    margin-bottom: 25px;
+}
+
 /*Text stylings*/
 h1 {
     font-family: 'Changa', sans-serif;
@@ -490,6 +494,12 @@ h1 {
 main a {
     font-weight: 700;
     cursor: pointer;
+}
+
+main a:not(footer a) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgb(182, 182, 182);
 }
 
 .reference-title {
