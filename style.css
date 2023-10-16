@@ -28,6 +28,10 @@ body {
     body {
         font-size: 16px;
     }
+
+    .tiny {
+        font-size: 12px;
+    }
 }
 
 /*Tablets & Laptiops*/
@@ -36,6 +40,10 @@ body {
     html,
     body {
         font-size: 18px;
+    }
+
+    .tiny {
+        font-size: 14px;
     }
 }
 
@@ -46,6 +54,10 @@ body {
     body {
         font-size: 20px;
     }
+
+    .tiny {
+        font-size: 16px;
+    }
 }
 
 /*TV and super large screen desktops*/
@@ -54,6 +66,10 @@ body {
     html,
     body {
         font-size: 24px;
+    }
+
+    .tiny {
+        font-size: 18px;
     }
 }
 
@@ -270,6 +286,10 @@ nav#large-screen .nav-link:hover {
         display: none;
     }
 
+    .small-screens {
+        display: block;
+    }
+
     nav#large-screen {
         display: none;
     }
@@ -298,6 +318,10 @@ nav#large-screen .nav-link:hover {
         display: flex;
     }
 
+    .small-screens {
+        display: block;
+    }
+
     nav #nav-links {
         top: 65px;
     }
@@ -317,7 +341,8 @@ nav#large-screen .nav-link:hover {
     }
 
     nav#ultra-small-screen,
-    nav#small-screen {
+    nav#small-screen,
+    .small-screens {
         display: none;
     }
 
@@ -341,7 +366,8 @@ nav#large-screen .nav-link:hover {
     }
 
     nav#ultra-small-screen,
-    nav#small-screen {
+    nav#small-screen,
+    .small-screens {
         display: none;
     }
 
@@ -476,7 +502,62 @@ main#index {
     text-align: center;
 }
 
-#references > *:not(:last-child) {
+.content>div p {
+    min-width: 370px;
+}
+
+@media (max-width: 480px) {
+    .content>div p {
+        min-width: 0;
+    }
+}
+
+#index .content>div:not(:last-child) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    column-gap: 35px;
+
+    padding-bottom: 25px;
+}
+
+@media (min-width: 926px) {
+    #index .content>div:not(:last-child) {
+        padding-top: 15px;
+    }
+}
+
+#index .content>div:nth-child(2) {
+    flex-wrap: wrap-reverse;
+}
+
+/* map on the main page */
+#index .content>div:last-child {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* between map & text underneath */
+#index .content>div:last-child>:first-child {
+    margin-bottom: 5px;
+}
+
+#index .content>div>* {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+#index .content>div>img,
+#index .content>div>a {
+    flex-grow: 0.2;
+    flex-shrink: 0.2;
+}
+
+#references>*:not(:last-child) {
     margin-bottom: 25px;
 }
 
@@ -488,7 +569,7 @@ h1 {
 
     color: #3e7da8;
 
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 main a {
@@ -508,12 +589,37 @@ main a:not(footer a) {
 
 
 /*Images*/
-img {
+img,
+iframe {
+    border-radius: 2px;
+}
+
+a>img {
     border-radius: 10px;
+}
+
+iframe {
+    /* map on the main page */
+    height: 300px;
+    width: 700px;
+}
+
+img {
+    object-fit: cover;
 }
 
 img#logo {
     height: 100%;
+}
+
+.img-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-link>img {
+    width: 100%;
 }
 
 footer img {
@@ -529,7 +635,7 @@ footer img {
 }
 
 .scaleup:hover {
-    transform: scale(1.2);
+    transform: scale(0.8);
 }
 
 .scaledown:hover {
@@ -546,7 +652,8 @@ footer img {
         padding: 25px 25px;
     }
 
-    main img {
+    main img,
+    iframe {
         /*for new browsers*/
         max-width: calc(100vw - 50px);
         /* 50px - side paddings of .content */
@@ -562,7 +669,8 @@ footer img {
         padding: 25px 7%;
     }
 
-    main img {
+    main img,
+    iframe {
         /*for new browsers*/
         max-width: calc(100vw - 14%);
         /* 14% - side paddings of .content */
@@ -574,7 +682,8 @@ footer img {
         padding: 25px 12%;
     }
 
-    main img {
+    main img,
+    iframe {
         /*for new browsers*/
         max-width: calc(100vw - 24%);
         /* 24% - side paddings of .content */
@@ -586,7 +695,8 @@ footer img {
         padding: 25px 15%;
     }
 
-    main img {
+    main img,
+    iframe {
         /*for new browsers*/
         max-width: calc(100vw - 30%);
         /* 30% - side paddings of .content */
