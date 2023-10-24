@@ -15,7 +15,7 @@ Here's what you can discover:
   * Interpersonal skills
   * Professional skills (for Web developers)
   * Resources to learn Web development
-* Career Paths
+* Careers
   * Tech jobs, their essential skills & salaries
   * Famous companies for career perspectives
 * References for the provided information
