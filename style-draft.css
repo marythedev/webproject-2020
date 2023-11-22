@@ -1,34 +1,3 @@
-/* Everything that is not currently used */
-
-/*Text styling*/
-.shadow {
-    text-shadow: 2px 2px #000;
-}
-
-.shadow_small {
-    text-shadow: 1px 1px #000;
-}
-
-.large-header {
-    text-align: center;
-    color: #6a8788;
-    font-family: 'Orbitron', 'Changa', sans-serif;
-}
-
-.large-header>span {
-    color: #c4af80;
-}
-
-.mid-header {
-    text-align: center;
-    color: #6a8788;
-    font-family: 'Orbitron', 'Changa', sans-serif;
-}
-
 h1.skills {
     color: #3b4262;
-}
-
-.mid-header.path {
-    color: #1bb0e2;
 }
