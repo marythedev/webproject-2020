@@ -532,6 +532,10 @@ main#index {
     column-gap: 35px;
 }
 
+#careers .content>div.tech-companies-img {
+    row-gap: 35px;
+}
+
 #knowledge .content>div {
     column-gap: 70px;
     padding-top: 25px;
@@ -721,7 +725,7 @@ img#logo {
 }
 
 #careers div.tech-companies-img>img {
-    width: 250px;
+    width: 255px;
     height: 200px;
 }
 
