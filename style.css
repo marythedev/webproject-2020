@@ -523,6 +523,7 @@ main#index {
 
 #index .content>div:not(:last-child),
 #knowledge .content>div,
+#skills .content>div,
 #careers .content>div {
     display: flex;
     flex-direction: row;
@@ -532,6 +533,7 @@ main#index {
     column-gap: 35px;
 }
 
+#skills .content>div.learn-websites-img,
 #careers .content>div.tech-companies-img {
     row-gap: 35px;
 }
@@ -547,6 +549,10 @@ main#index {
     padding-bottom: 25px;
 }
 
+#skills .content>div {
+    padding-bottom: 75px;
+}
+
 #careers .content>div {
     padding-bottom: 50px;
 }
@@ -557,6 +563,7 @@ main#index {
 
 #index .content>div:not(:last-child):not(.wrap-reverse),
 #knowledge .content>div:not(.wrap-reverse),
+#skills .content>div,
 #careers .content>div {
     flex-wrap: wrap;
 }
@@ -602,7 +609,7 @@ h3 {
 
 h1 {
     font-family: 'Changa', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 
     color: #3e7da8;
 }
@@ -618,6 +625,8 @@ h3 {
 #knowledge h1,
 #knowledge h1>span,
 #knowledge h2,
+#skills h1,
+#skills h2,
 #careers h1 {
     font-family: 'Orbitron', 'Changa', sans-serif;
     text-align: center;
@@ -628,8 +637,18 @@ h3 {
     color: #c4af80;
 }
 
-#knowledge h2 {
+#knowledge h2,
+#skills h2 {
     color: #6a8788;
+}
+
+#skills h1 {
+    color: #3b4262;
+}
+
+#skills h1,
+#skills h2 {
+    text-shadow: none;
 }
 
 #careers h1 {
@@ -637,8 +656,7 @@ h3 {
 }
 
 #careers h1.tech-companies-img {
-    color: #6a8788;
-    text-shadow: 1px 1px 1px #000;
+    color: #6a8788
 }
 
 main a {
@@ -663,7 +681,7 @@ iframe {
     border-radius: 2px;
 }
 
-a>img {
+#index a>img {
     border-radius: 10px;
 }
 
@@ -689,11 +707,18 @@ img#logo {
 
 .img-link>img {
     width: 100%;
+    height: 100%;
 }
 
 #knowledge .content>div>img,
+#skills .content>div>img,
 #careers .content>div>img {
     width: 300px;
+}
+
+#skills .content>div>img {
+    max-height: 300px;
+    object-fit: contain;
 }
 
 #translators-img img {
@@ -703,6 +728,7 @@ img#logo {
 /* image growing */
 #index .content>div>*,
 #knowledge .content>div>*:not(.special-img),
+#skills .content>div>*,
 #careers .content>div>*:not(div.tech-companies-img>*) {
     flex-grow: 1;
     flex-shrink: 1;
@@ -719,9 +745,19 @@ img#logo {
 #index .content>div>a,
 #knowledge .content>div>img:not(.special-img),
 #knowledge .content>div>a,
-#translators-img img {
+#translators-img img,
+#skills .content>div>a {
     flex-grow: 0.2;
     flex-shrink: 0.2;
+}
+
+#skills div.learn-websites-img a {
+    height: 175px;
+    width: 300px;
+}
+
+#skills div.learn-websites-img img {
+    object-fit: fill;
 }
 
 #careers div.tech-companies-img>img {
@@ -786,10 +822,16 @@ footer img {
 }
 
 .scaledown:hover {
-    transform: scale(0.8);
+    transform: scale(0.85);
 }
 
 /*Custom screen size stylings & side paddings*/
+@media (max-width: 290px) {
+    #skills div.learn-websites-img a {
+        height: 125px;
+    }
+}
+
 @media (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
