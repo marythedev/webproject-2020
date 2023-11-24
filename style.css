@@ -626,19 +626,23 @@ h3 {
 #knowledge h1>span,
 #knowledge h2,
 #skills h1,
-#skills h2,
+#skills h3.title,
 #careers h1 {
     font-family: 'Orbitron', 'Changa', sans-serif;
     text-align: center;
     text-shadow: 2px 2px 1.5px #000;
 }
 
+#skills h1,
+#skills h3.title {
+    text-shadow: none;
+}
+
 #knowledge h1>span {
     color: #c4af80;
 }
 
-#knowledge h2,
-#skills h2 {
+#knowledge h2 {
     color: #6a8788;
 }
 
@@ -646,9 +650,8 @@ h3 {
     color: #3b4262;
 }
 
-#skills h1,
-#skills h2 {
-    text-shadow: none;
+#skills h3.title {
+    color: #4E5782;
 }
 
 #careers h1 {
@@ -711,13 +714,12 @@ img#logo {
 }
 
 #knowledge .content>div>img,
-#skills .content>div>img,
 #careers .content>div>img {
     width: 300px;
 }
 
 #skills .content>div>img {
-    max-height: 300px;
+    max-height: 250px;
     object-fit: contain;
 }
 
@@ -728,7 +730,7 @@ img#logo {
 /* image growing */
 #index .content>div>*,
 #knowledge .content>div>*:not(.special-img),
-#skills .content>div>*,
+#skills .content>div>*:not(img.language),
 #careers .content>div>*:not(div.tech-companies-img>*) {
     flex-grow: 1;
     flex-shrink: 1;
@@ -745,19 +747,15 @@ img#logo {
 #index .content>div>a,
 #knowledge .content>div>img:not(.special-img),
 #knowledge .content>div>a,
-#translators-img img,
-#skills .content>div>a {
+#translators-img img {
     flex-grow: 0.2;
     flex-shrink: 0.2;
 }
 
-#skills div.learn-websites-img a {
+#skills .content>div.learn-websites-img>a {
     height: 175px;
     width: 300px;
-}
-
-#skills div.learn-websites-img img {
-    object-fit: fill;
+    max-width: 300px;
 }
 
 #careers div.tech-companies-img>img {
@@ -768,6 +766,10 @@ img#logo {
 #knowledge #multimedia-img>img,
 #knowledge #graphics-img>img {
     width: 150px;
+}
+
+#skills .content>div>img.language {
+    max-height: 200px;
 }
 
 .special-img#portrait,
@@ -817,6 +819,10 @@ footer img {
     transform: scale(1.3);
 }
 
+#skills .zoomed-in:hover {
+    transform: scale(1.2);
+}
+
 .scaleup:hover {
     transform: scale(1.2);
 }
@@ -852,6 +858,10 @@ footer img {
     #knowledge #multimedia-img>img,
     #knowledge #graphics-img>img {
         width: 100px;
+    }
+
+    #skills .content>div>img.language {
+        max-height: 150px;
     }
 }
 
@@ -890,6 +900,10 @@ footer img {
         max-width: calc(100vw - 24%);
         /* 24% - side paddings of .content */
     }
+
+    #skills .content>div>img.language {
+        max-width: 125px;
+    }
 }
 
 @media (min-width: 925px) {
@@ -913,5 +927,13 @@ footer img {
 
     .special-img.zoomed-in:hover {
         transform: scale(1.17);
+    }
+}
+
+@media (min-width: 1200px) {
+    #skills .content>div>img.language {
+        flex-grow: 0.2;
+        flex-shrink: 0.2;
+        flex-basis: 300px;
     }
 }
