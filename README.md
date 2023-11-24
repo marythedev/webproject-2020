@@ -1,4 +1,4 @@
-# Co-op Website Project
+# WebProject
 
 Hellooo, **Thank you** for checking out this project!<br/>
 I'd like to present this website I build some time ago to introduce people to Software Development. Hope this website will help someone discover something new or ignite a spark of interest to learn new skills! Besides, this website features information about Toronto-based technology company, where I had a wonderful co-op experience!
@@ -22,7 +22,7 @@ Here's what you can discover:
 
 <br/>
 
-This static website is built only with <br/>
+This static, responsive website is built with with <br/>
 ![HTML] AND ![CSS] <br/>
 and is currently hosted with Netlify!
 <br/><br/>
