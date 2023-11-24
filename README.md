@@ -1,4 +1,4 @@
-# Co-op Website Project
+# WebProject
 
 Hellooo, **Thank you** for checking out this project!<br/>
 I'd like to present this website I build some time ago to introduce people to Software Development. Hope this website will help someone discover something new or ignite a spark of interest to learn new skills! Besides, this website features information about Toronto-based technology company, where I had a wonderful co-op experience!
@@ -15,14 +15,14 @@ Here's what you can discover:
   * Interpersonal skills
   * Professional skills (for Web developers)
   * Resources to learn Web development
-* Career Paths
+* Careers
   * Tech jobs, their essential skills & salaries
   * Famous companies for career perspectives
 * References for the provided information
 
 <br/>
 
-This static website is built only with <br/>
+This static, responsive website is built with with <br/>
 ![HTML] AND ![CSS] <br/>
 and is currently hosted with Netlify!
 <br/><br/>
@@ -44,10 +44,12 @@ If you want to share your placement experience or have other idea to enhance thi
   4. Push to Your Branch (`git push origin my-experience`)
   5. Open a Pull Request
 
-Thank you and Good luck!
+Check [this Figma file](https://www.figma.com/file/N0AdeOj7CMO7FXU2u8AB6L/WebProject2020?type=design&node-id=0%3A1&mode=design&t=iYSuB60ijwzMKuyt-1) to see the current versions of icons & WebProject2020 Logo. Feel free to add your designs :)
 
 Need contribution idea?
 See the [open issues](https://github.com/marythedev/webproject-2020/issues) for some of the possible contributions.
+
+Thank you and Good luck!
 
 
 ## Contact

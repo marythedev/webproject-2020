@@ -3,6 +3,10 @@
 
 <head>
     <title>Skills</title>
+
+    <link rel="icon" href="../data/icons/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="../data/icons/favicon.svg" type="image/x-icon" />
+
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
@@ -12,168 +16,216 @@
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-    <div class="wrapper">
-
-        <!--Menu-->
-        <div class="container">
-            <div>
-                <form action="../index.html">
-                    <input type="submit" class="menu" value="Home" />
-                </form>
+    <!--Navbar (for ultra small screens < 380px)-->
+    <nav id="ultra-small-screen">
+        <div id="nav-content">
+            <div id="menu-button-ultra-small">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <p class="item"><a href="knowledge.html" class="item">Knowledge</a></p>
-            <p class="item"><a href="skills.html" class="item">Skills</a></p>
-            <p class="item"><a href="career-paths.html" class="item">Career Paths</a></p>
-            <p class="item"><a href="references.html" class="item">References</a></p>
-            <select name="language-dropdown" id="language-dropdown">
-                <option value="skills.html" selected>English</option>
-                <option value="../ru/skills.html">Русский</option>
-                <option value="../ua/skills.html">Українська</option>
-            </select>
-        </div>
-        <hr style="margin: 0px;padding:0px;">
-        <div class="container1">
-            <div class="text"
-                style="text-align: center; color: white; font-family: 'Orbitron', 'Changa', sans-serif; font-weight: 900;">
-                Skills
+            <div id="nav-links">
+                <p class="nav-link"><a href="../index.html">Home</a></p>
+                <p class="nav-link"><a href="knowledge.html">Knowledge</a></p>
+                <p class="nav-link"><a href="skills.html">Skills</a></p>
+                <p class="nav-link"><a href="careers.html">Careers</a></p>
+                <p class="nav-link"><a href="references.html">References</a></p>
+                <select name="language-dropdown" class="language-dropdown">
+                    <option value="skills.html" selected>English</option>
+                    <option value="../ru/skills.html">Русский</option>
+                    <option value="../ua/skills.html">Українська</option>
+                </select>
             </div>
         </div>
-        <br>
+        <img src="../data/icons/logo.svg" id="logo" alt="Web Project Logo">
+    </nav>
 
+    <!--Navbar (for small screens 380px < 769px)-->
+    <nav id="small-screen">
+        <div id="nav-content">
+            <div id="menu-button-small">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div id="nav-links">
+                <p class="nav-link"><a href="../index.html">Home</a></p>
+                <p class="nav-link"><a href="knowledge.html">Knowledge</a></p>
+                <p class="nav-link"><a href="skills.html">Skills</a></p>
+                <p class="nav-link"><a href="careers.html">Careers</a></p>
+                <p class="nav-link"><a href="references.html">References</a></p>
+            </div>
+        </div>
+        <img src="../data/icons/logo.svg" id="logo" alt="Web Project Logo">
+        <select name="language-dropdown" class="language-dropdown">
+            <option value="skills.html" selected>English</option>
+            <option value="../ru/skills.html">Русский</option>
+            <option value="../ua/skills.html">Українська</option>
+        </select>
+    </nav>
+
+    <!--Navbar (for large screens > 769px)-->
+    <nav id="large-screen">
+        <a href="../index.html"><button id="home-button">Home</button></a>
+        <p class="nav-link"><a href="knowledge.html">Knowledge</a></p>
+        <p class="nav-link"><a href="skills.html">Skills</a></p>
+        <p class="nav-link"><a href="careers.html">Careers</a></p>
+        <p class="nav-link"><a href="references.html">References</a></p>
+        <select name="language-dropdown" class="language-dropdown">
+            <option value="skills.html" selected>English</option>
+            <option value="../ru/skills.html">Русский</option>
+            <option value="../ua/skills.html">Українська</option>
+        </select>
+    </nav>
+
+    <hr>
+    <div id="animation-header">Web Developer Skills</div>
+
+    <main id="skills">
         <!--Content-->
         <div class="content">
-            <p class="bold">As the company hires the employees, they expect them to meet the expectations of their job
-                as well as to fit in the work team and easily get along with their colleagues. Thus it is important for
-                employees to have a range of skills that will help them to meet employer’s criteria and to be an
-                excellent choice for their job. In general, skills can be divided into 2 categories: social
-                (interpersonal) and professional.
+            <p>As the company hires the employees, they expect them to meet the expectations of their job as well as to
+                fit in the work team and easily get along with their colleagues. Thus it is important for employees to
+                have a range of skills that will help them to meet employer’s criteria and to be an excellent choice for
+                their job. In general, skills can be divided into 2 categories: social (interpersonal) and professional.
             </p>
-            <div style="margin: 45px;">
-                <h1 class="header2_else" style="color:#3b4262">Interpersonal Skills (at the workplace)</h1>
-                <div class="center_even">
-                    <div class="center_even_item">
-                        <p>Interpersonal skills are the behaviours and tactics a person uses to interact with others
-                            effectively. The main examples of interpersonal skills include:
-                        </p>
+            <br>
+            <h1>Interpersonal Skills</h1>
+            <br>
+            <div>
+                <div>
+                    <p>Interpersonal skills are the behaviours and tactics a person uses to interact with others
+                        effectively. The main examples of interpersonal skills include:
+                    </p>
+                    <ul>
                         <ul>
-                            <ul>
-                                <ul>
-                                    <ul>
-                                        <li>Teamwork</li>
-                                        <li>Communication</li>
-                                        <li>Active Listening</li>
-                                        <li>Dependability</li>
-                                        <li>Responsibility</li>
-                                        <li>Empathy</li>
-                                        <li>etc.</li>
-                                    </ul>
-                                </ul>
-                            </ul>
+                            <li>Teamwork</li>
+                            <li>Communication</li>
+                            <li>Active Listening</li>
+                            <li>Dependability</li>
+                            <li>Responsibility</li>
+                            <li>Empathy</li>
+                            <li>etc.</li>
                         </ul>
-                    </div>
-                    <img class="center_even_item scaleup notlink" src="../data/interpersonal_skills.png"
-                        alt="Interpersonal Skills" height="250" width="400">
+                    </ul>
                 </div>
-
-                <br><br>
-
-                <h1 class="header2_else" style="color:#3b4262">Professional Skills (as a Web Developer)</h1>
-                <br>
-                <h2 class="header2_else" style="color:#3b4262">Languages</h2>
-                <div style="margin-left: 50px;">
-                    <h3 class="margin_ident">HTML (HyperText Markup Language)</h3>
-                    <div class="text-left_pic-right_container">
-                        <p class="text-left_pic-right_item">HTML (HyperText Markup Language) is the standard markup
-                            language used to create web pages. A markup language is a way of describing the content of a
-                            web page to define how information (text, pictures, etc.) should be displayed on the page.
-                            For example, take a look at this web page. For example, take a look at this web page. All of
-                            the text that is written here is displayed using HTML.
-                        </p>
-                        <img class="text-left_pic-right_item" src="../data/html5.png" alt="HTML5" height="175"
-                            width="100">
-                    </div>
-                    <h3 class="margin_ident">CSS (Cascading Style Sheets)</h3>
-                    <div class="text-left_pic-right_container">
-                        <p class="text-left_pic-right_item">CSS (Cascading Style Sheets) is the language that is used to
-                            describe the style of a web page. HTML is used to create the content of a web page, and CSS
-                            is the language that describes how that page created using HTML should look. Once again,
-                            look at this webpage. Fonts, colours, background, menu animations, text and pictures’ sizes
-                            - all of this is described with CSS. Even though both HTML and CSS are not considered as
-                            programming languages (as they are not used to do any of the calculations), they are,
-                            without a doubt, the most important tools for a web developer.
-                        </p>
-                        <img class="text-left_pic-right_item" src="../data/CSS3.png" alt="CSS3" height="175"
-                            width="100">
-                    </div>
-                    <h3 class="margin_ident">Javascript</h3>
-                    <br>
-                    <div class="text-left_pic-right_container">
-                        <p class="text-left_pic-right_item">Javascript (or JS) is the programming language that is used
-                            to create interactive features on a website such as pop-up windows, forms, complex page
-                            animations, sending and processing forms, etc.
-                        </p>
-                        <img class="text-left_pic-right_item" src="../data/JS.png" alt="JavaScript" height="150"
-                            width="100">
-                    </div>
-                </div>
-                <br><br>
-                <h2 class="header2_else" style="color:#3b4262">Website Design</h2>
-                <div style="margin-left: 50px;">
-                    <h3 class="margin_ident">Website Sketches</h3>
-                    <div class="text-left_pic-right_container">
-                        <p class="text-left_pic-right_item">A sketch is one of the initial steps in the brainstorming
-                            process of any web design project. Sketching can be used as the design progresses to help
-                            clarify ideas and provide meaningful feedback.
-                        </p>
-                        <img class="text-left_pic-right_item" src="../data/web_sketch.png" alt="Website Sketch"
-                            height="200" width="300">
-                    </div>
-                    <h3 class="margin_ident">Colour Theory</h3>
-                    <div class="text-left_pic-right_container">
-                        <p class="text-left_pic-right_item">Colour theory is the collection of rules and guidelines
-                            which designers use to communicate with users through appealing colour schemes in visual
-                            interfaces. Developers usually use the colour wheel that helps them to pick the best colours
-                            for their website. Experienced developers know to concepts of the colour theory, and what
-                            colours harmonize together. Although, beginner developers usually use websites like
-                            <a href="https://paletton.com/" target="_blank" style="color:black;">Paletton</a> to help
-                            them to pick appealing colours.
-                        </p>
-                        <img class="text-left_pic-right_item" src="../data/colour.jpg" alt="Colour Wheel" height="250"
-                            width="275">
-                    </div>
-                </div>
+                <img src="../data/interpersonalSkills.png" alt="Interpersonal Skills" class="zoomed-out">
             </div>
-
             <br>
-
-            <h1 class="header2_else" style="color:#3b4262">Websites to learn Web Development</h1>
+            <h1>Professional Skills</h1>
             <br>
-            <div class="center">
-                <a class="center_item scaledown link" href="https://www.sololearn.com/" target="_blank">
-                    <img src="../data/sololearn.jpg" alt="Sololearn" height="200" width="350"></a>
-                <a class="center_item scaledown link" href="https://www.udemy.com/" target="_blank">
-                    <img src="../data/udemy.jpg" alt="Udemy" height="200" width="350"></a>
-                <a class="center_item scaledown link" href="https://www.khanacademy.org/" target="_blank">
-                    <img src="../data/khan.png" alt="Khan Academy" height="200" width="350"></a>
-                <a class="center_item scaledown link" href="https://www.freecodecamp.org/" target="_blank">
-                    <img src="../data/freecodecamp.png" alt="Freecodecamp" height="200" width="350"></a>
-                <a class="center_item scaledown link" href="https://www.w3schools.com/" target="_blank">
-                    <img src="../data/w3schools.jpg" alt="W3schools" height="200" width="350"></a>
-                <a class="center_item scaledown link" href="https://developer.mozilla.org/en-US/" target="_blank">
-                    <img src="../data/MDN.png" alt="MDN Web Docs" height="200" width="350"></a>
+            <hr>
+            <br>
+            <h3 class="title">Languages</h3>
+            <hr>
+            <br>
+            <div>
+                <div>
+                    <h3>HTML</h3>
+                    <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. A
+                        markup language is a way of describing the content of a web page to define how information
+                        (text, pictures, etc.) should be displayed on the page. For example, take a look at this web
+                        page. For example, take a look at this web page. All of the text that is written here is
+                        displayed using HTML.
+                    </p>
+                </div>
+                <img src="../data/html.png" alt="HTML5" class="language">
+            </div>
+            <div>
+                <div>
+                    <h3>CSS</h3>
+                    <p>CSS (Cascading Style Sheets) is the language that is used to describe the style of a web page.
+                        HTML is used to create the content of a web page, and CSS is the language that describes how
+                        that page created using HTML should look. Once again, look at this webpage. Fonts, colors,
+                        background, menu animations, text and pictures’ sizes - all of this is described with CSS. Even
+                        though both HTML and CSS are not considered as programming languages (as they are not used to do
+                        any of the calculations), they are, without a doubt, the most important tools for a web
+                        developer.
+                    </p>
+                </div>
+                <img src="../data/css.png" alt="CSS3" class="language">
+            </div>
+            <div>
+                <div>
+                    <h3>Javascript</h3>
+                    <p>Javascript (or JS) is the programming language that is used to create interactive features on a
+                        website such as pop-up windows, forms, complex page animations, sending and processing forms,
+                        etc.
+                    </p>
+                </div>
+                <img src="../data/JS.png" alt="JavaScript" class="language">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h3 class="title">Website Design</h3>
+            <hr>
+            <br>
+            <br>
+            <div>
+                <div>
+                    <h3>Color Theory</h3>
+                    <p>Color theory is the collection of rules and guidelines which designers use to communicate with
+                        users through appealing color schemes in visual interfaces. Developers usually use the color
+                        wheel that helps them to pick the best colors for their website. Experienced developers know to
+                        concepts of the color theory, and what colors harmonize together. Although, beginner developers
+                        usually use websites like <a href="https://paletton.com/" target="_blank">Paletton</a> to help
+                        them to pick appealing colors.
+                    </p>
+                </div>
+                <img src="../data/color-wheel.jpg" alt="Color Wheel" class="zoomed-out">
+            </div>
+            <div>
+                <div>
+                    <h3>Website Sketches</h3>
+                    <p>A sketch is one of the initial steps in the brainstorming process of any web design project.
+                        Sketching can be used as the design progresses to help clarify ideas and provide meaningful
+                        feedback.
+                    </p>
+                </div>
+                <img src="../data/sketching.png" alt="Website Sketch" class="zoomed-out">
+            </div>
+            <br>
+            <h1>Websites to learn Web Development</h1>
+            <div class="learn-websites-img">
+                <a href="https://www.sololearn.com/" target="_blank" class="img-link">
+                    <img src="../data/sololearn.jpg" alt="Sololearn" class="scaledown">
+                </a>
+                <a href="https://www.udemy.com/" target="_blank" class="img-link">
+                    <img src="../data/udemy.jpg" alt="Udemy" class="scaledown">
+                </a>
+                <a href="https://www.khanacademy.org/" target="_blank" class="img-link">
+                    <img src="../data/khanacademy.png" alt="Khan Academy" class="scaledown">
+                </a>
+                <a href="https://www.freecodecamp.org/" target="_blank" class="img-link">
+                    <img src="../data/freecodecamp.png" alt="Freecodecamp" class="scaledown">
+                </a>
+                <a href="https://www.w3schools.com/" target="_blank" class="img-link">
+                    <img src="../data/w3schools.jpg" alt="W3schools" class="scaledown">
+                </a>
+                <a href="https://developer.mozilla.org/en-US/" target="_blank" class="img-link">
+                    <img src="../data/MDN.png" alt="MDN Web Docs" class="scaledown">
+                </a>
             </div>
         </div>
-        <!--Footer-->
-        <div class="push"></div>
-    </div>
-    <hr style="margin:0; margin-top:3px; padding:0; border: 0.5px solid grey;">
-    <footer class="footer">
-        <small>&copy; Copyright 2020-2023, <a href="https://github.com/marythedev" target="_blank">
-                Maria Dmytrenko</a></small>
-    </footer>
+
+        <footer>
+            <small>&copy; Copyright 2020-2023,&nbsp;
+                <span>
+                    <a href="https://github.com/marythedev" target="_blank">
+                        Maria Dmytrenko&nbsp;
+                    </a>
+                    <a href="https://www.linkedin.com/in/marythedev/" target="_blank">
+                        <img src="../data/icons/linkedin.svg" alt="My LinkedIn">
+                    </a>
+                </span>
+            </small>
+        </footer>
+    </main>
 
     <script src="../script.js"></script>
 </body>

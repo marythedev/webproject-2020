@@ -3,6 +3,10 @@
 
 <head>
     <title>Home</title>
+
+    <link rel="icon" href="data/icons/favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="data/icons/favicon.svg" type="image/x-icon" />
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
@@ -12,84 +16,125 @@
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-    <div class="wrapper">
-
-        <!--Menu-->
-        <div class="container">
-            <div>
-                <form action="index.html">
-                    <input type="submit" class="menu" value="Menu" />
-                </form>
+    <!--Navbar (for ultra small screens < 380px)-->
+    <nav id="ultra-small-screen">
+        <div id="nav-content">
+            <div id="menu-button-ultra-small">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <p class="item"><a href="en/knowledge.html" class="item">Knowledge</a></p>
-            <p class="item"><a href="en/skills.html" class="item">Skills</a></p>
-            <p class="item"><a href="en/career-paths.html" class="item">Career Paths</a></p>
-            <p class="item"><a href="en/references.html" class="item">References</a></p>
-            <select name="language-dropdown" id="language-dropdown">
-                <option value="index.html" selected>English</option>
-                <option value="ru/index.html">Русский</option>
-                <option value="ua/index.html">Українська</option>
-            </select>
+            <div id="nav-links">
+                <p class="nav-link"><a href="index.html">Home</a></p>
+                <p class="nav-link"><a href="en/knowledge.html">Knowledge</a></p>
+                <p class="nav-link"><a href="en/skills.html">Skills</a></p>
+                <p class="nav-link"><a href="en/careers.html">Careers</a></p>
+                <p class="nav-link"><a href="en/references.html">References</a></p>
+                <select name="language-dropdown" class="language-dropdown">
+                    <option value="index.html" selected>English</option>
+                    <option value="ru/index.html">Русский</option>
+                    <option value="ua/index.html">Українська</option>
+                </select>
+            </div>
         </div>
+        <img src="data/icons/logo.svg" id="logo" alt="Web Project Logo">
+    </nav>
 
-        <!--Content-->
+    <!--Navbar (for small screens 380px < 769px)-->
+    <nav id="small-screen">
+        <div id="nav-content">
+            <div id="menu-button-small">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div id="nav-links">
+                <p class="nav-link"><a href="index.html">Home</a></p>
+                <p class="nav-link"><a href="en/knowledge.html">Knowledge</a></p>
+                <p class="nav-link"><a href="en/skills.html">Skills</a></p>
+                <p class="nav-link"><a href="en/careers.html">Careers</a></p>
+                <p class="nav-link"><a href="en/references.html">References</a></p>
+            </div>
+        </div>
+        <img src="data/icons/logo.svg" id="logo" alt="Web Project Logo">
+        <select name="language-dropdown" class="language-dropdown">
+            <option value="index.html" selected>English</option>
+            <option value="ru/index.html">Русский</option>
+            <option value="ua/index.html">Українська</option>
+        </select>
+    </nav>
+
+    <!--Navbar (for large screens > 769px)-->
+    <nav id="large-screen">
+        <a href="index.html"><button id="home-button">Home</button></a>
+        <p class="nav-link"><a href="en/knowledge.html">Knowledge</a></p>
+        <p class="nav-link"><a href="en/skills.html">Skills</a></p>
+        <p class="nav-link"><a href="en/careers.html">Careers</a></p>
+        <p class="nav-link"><a href="en/references.html">References</a></p>
+        <select name="language-dropdown" class="language-dropdown">
+            <option value="index.html" selected>English</option>
+            <option value="ru/index.html">Русский</option>
+            <option value="ua/index.html">Українська</option>
+        </select>
+    </nav>
+
+    <!--Content-->
+    <main id="index">
         <div class="content">
-            <br>
-            <h1 class="shadow" id="welcome-message">
-                Welcome to the best placement for the cooperative education experience!</h1>
-            <br>
-            <div class="text-left_pic-right_container">
-                <p class="text-left_pic-right_item" style="margin-bottom: 3px; margin-top: 3px;">Netex Enterprises Inc.,
-                    the company that provides its clients with solutions for management information systems, covering
-                    every phase from consultation to operation and maintenance. This is a leading technology solutions
-                    provider serving a broad range of clients in numerous industries across North America located in
-                    Toronto. <br><br> Regardless of whether your further career choice will be front-end developer,
-                    full-stack developer or software engineer, Netex is the place where you can get useful knowledge and
-                    experience as a beginner programmer, as well as the practical application of it.
-                </p>
-                <a class="text-left_pic-right_item" href="https://www.netexenterprises.com/" target="_blank"><img
-                        class="scaledown link" src="data/netex_logo.jpg" alt="Netex Enterprises Inc. Logo" height="175"
-                        width="450"></a>
-            </div>
-            <br>
-            <div class="text-right_pic_left_container">
-                <img class="text-right_pic_left_item scaleup notlink" src="data/netex_picture.jpg"
-                    alt="Work Environment" height="250" width="400">
-                <p class="text-right_pic_left_item" style="margin-bottom: 3px; margin-top: 3px;">As you enter the doors
-                    of the office, you will be surrounded, by all means, the best group of people to work with the
-                    student can ask for. You will never feel lonely, unheard or left with dozens of questions on your
-                    own. You can bring your impact to the company, helping to do different types of tasks, meanwhile
-                    developing your skills of communication, listening, and different other interpersonal skills. Yet
-                    the best part is getting experience of what it is like to work at the job of your dream. Besides the
-                    tasks from your employer, you can also get your personal time, when you can learn programming
-                    languages or understand any computer question that you might have.
+            <h1 class="center">Welcome to the best placement for the cooperative education experience!</h1>
+            <div class="wrap-reverse">
+                <a href="https://gonetex.com/" target="_blank" class="img-link">
+                    <img src="data/netex.jpg" alt="Netex Enterprises Inc. Logo" class="scaledown">
+                </a>
+                <p>Netex Enterprises Inc., the company that provides its clients with solutions for management
+                    information systems, covering every phase from consultation to operation and maintenance. This is a
+                    leading technology solutions provider serving a broad range of clients in numerous industries across
+                    North America located in Toronto. <br class="small-screens">
+                    <br class="small-screen ultra-small-screen"> Regardless of whether your further career choice will
+                    be front-end developer, full-stack developer or software engineer, Netex is the place where you can
+                    get useful knowledge and experience as a beginner programmer, as well as the practical application
+                    of it.
                 </p>
             </div>
-
-            <br><br>
-            <div class="map_container">
+            <div>
+                <p>As you enter the doors of the office, you will be surrounded, by all means, the best group of people
+                    to work with the student can ask for. You will never feel lonely, unheard or left with dozens of
+                    questions on your own. You can bring your impact to the company, helping to do different types of
+                    tasks, meanwhile developing your skills of communication, listening, and different other
+                    interpersonal skills. Yet the best part is getting experience of what it is like to work at the job
+                    of your dream. Besides the tasks from your employer, you can also get your personal time, when you
+                    can learn programming languages or understand any computer question that you might have.
+                </p>
+                <img src="data/workEnvironment.jpg" alt="Work Environment">
+            </div>
+            <div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92209.54545361057!2d-79.43235857375848!3d43.76147606537727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cdc1727892d5%3A0x95b8357b769772e5!2sNETEX%20ENTERPRISES%20INC.!5e0!3m2!1sen!2sca!4v1592326234240!5m2!1sen!2sca"
-                    width="500" height="350" frameborder="0" style="border: 1px solid black;" allowfullscreen=""
-                    aria-hidden="false" tabindex="0"></iframe>
-                <p style="font-size: 0.74em;">You can always find more information at the official website of <a
-                        href="https://www.netexenterprises.com/" target="_blank"
-                        style="text-decoration: underline; color: black; font-weight:550;">Netex Enterprises Inc.</a>
+                    frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+                <p class="tiny">More information at the official website of
+                    <a href="https://gonetex.com/" target="_blank">Netex Enterprises Inc.</a>
                 </p>
             </div>
         </div>
 
-        <!--Footer-->
-        <div class="push"></div>
-    </div>
-    <hr style="margin:0; margin-top:3px; padding:0; border: 0.5px solid grey;">
-    <footer class="footer">
-        <small>&copy; Copyright 2020-2023, <a href="https://github.com/marythedev" target="_blank">
-                Maria Dmytrenko</a></small>
-    </footer>
+        <footer>
+            <small>&copy; Copyright 2020-2023,&nbsp;
+                <span>
+                    <a href="https://github.com/marythedev" target="_blank">
+                        Maria Dmytrenko&nbsp;
+                    </a>
+                    <a href="https://www.linkedin.com/in/marythedev/" target="_blank">
+                        <img src="data/icons/linkedin.svg" alt="My LinkedIn">
+                    </a>
+                </span>
+            </small>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
