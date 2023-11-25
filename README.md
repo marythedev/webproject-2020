@@ -25,15 +25,13 @@ Here's what you can discover:
 This static, responsive website is built with with <br/>
 ![HTML] AND ![CSS] <br/>
 and is currently hosted with Netlify!
-<br/><br/>
+<br/>
 
 Click <a href="https://webproject2020.netlify.app/" target="_blank">https://webproject2020.netlify.app/</a> and check it out :)
 
 <br/>
-<img src="https://github.com/marythedev/webproject-2020/assets/79389256/d44d5920-4111-4c59-8a79-222c0fd8822e" alt="Website Screenshot 1" width="650" />
-<img src="https://github.com/marythedev/webproject-2020/assets/79389256/140a90dc-ea2c-4891-a1fd-0e49fa9da449" alt="Website Screenshot 2" width="650" />
-<br/>
 
+![Mockup](https://github.com/marythedev/webproject-2020/assets/79389256/618bbbcf-6d75-4fba-acce-183982228f3e)
 
 ## Wanna contribute?
 
