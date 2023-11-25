@@ -1,3 +1,4 @@
+// changing url when the language was selected from the language dropdown
 document.querySelector('#ultra-small-screen .language-dropdown').onchange = function () {
     window.location.href = this.value;
 }
@@ -9,6 +10,7 @@ document.querySelector('#small-screen .language-dropdown').onchange = function (
 document.querySelector('#large-screen .language-dropdown').onchange = function () {
     window.location.href = this.value;
 }
+
 
 var navExpanded = false;
 document.getElementById('menu-button-small').addEventListener('click', () => {
@@ -45,6 +47,7 @@ document.getElementById('menu-button-ultra-small').addEventListener('click', () 
     }
 })
 
+
 let zoomIn = document.getElementsByClassName('zoomed-out');
 for (let i = 0; i < zoomIn.length; i++) {
     let img = zoomIn[i];
@@ -63,3 +66,8 @@ for (let i = 0; i < zoomIn.length; i++) {
         }
     });
 }
+
+
+// setting current year for the footer
+let today = new Date();
+document.getElementById('current-year').textContent = today.getFullYear();

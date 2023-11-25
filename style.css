@@ -819,11 +819,8 @@ footer img {
     transform: scale(1.3);
 }
 
+.scaleup:hover,
 #skills .zoomed-in:hover {
-    transform: scale(1.2);
-}
-
-.scaleup:hover {
     transform: scale(1.2);
 }
 
