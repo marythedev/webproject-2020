@@ -1,13 +1,11 @@
-.menu {
-    font-family: 'Sofia Sans', sans-serif;
-
-}
-
-.item {
-    font-family: 'Sofia Sans', sans-serif;
-
-}
-
-.text {
+nav *,
+#animation-header,
+h1,
+#knowledge h1,
+#knowledge h1>span,
+#knowledge h2,
+#skills h1,
+#skills h3.title,
+#careers h1 {
     font-family: 'Sofia Sans', sans-serif;
 }
