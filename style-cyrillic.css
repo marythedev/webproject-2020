@@ -9,3 +9,10 @@ h1,
 #careers h1 {
     font-family: 'Sofia Sans', sans-serif;
 }
+
+#knowledge h1,
+#knowledge h1>span,
+#knowledge h2,
+#careers h1 {
+    text-shadow: 1px 1px 1px #000;
+}

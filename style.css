@@ -144,7 +144,7 @@ nav#ultra-small-screen #nav-links {
 
 nav#small-screen #nav-links>*,
 nav#ultra-small-screen #nav-links>* {
-    margin: 10px 20px;
+    margin: 20px 20px;
 }
 
 nav#ultra-small-screen #nav-links>select {
